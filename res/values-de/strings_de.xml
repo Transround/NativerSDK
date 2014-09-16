@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transround_translator_not_installed_title">Fehlende Applikation</string>
+    <string name="transround_translator_not_installed_text">Übersetzungsapplikation nicht installiert. Möchten Sie es installieren?</string>
+    <string name="transround_notification_ticker">Dies ist eine übersetzbare Applikation</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">Zur Übersetzung von %1$s Bildschirm berühren</string>
+    <string name="transround_start_translator_title">Übersetzer starten</string>
+    <string name="transround_start_translator_text">Möchten Sie die Übersetzungsapplikation starten?</string>
+    <string name="transround_start_translator_yes">Ja</string>
+    <string name="transround_start_translator_no">Nein</string>
+    <string name="transround_start_translator_error">Fehler beim Starten von Google Play. Market URL war %1$s</string>
+    
+    <string name="transround_translation_available_title">Verfügbare Übersetzung</string>
+    <string name="transround_translation_available_message">Es steht eine Übersetzung zur Verfügung zur vorliegenden Applikation. Möchten Sie die Applikation übersetzen?</string>
+    <string name="transround_translation_available_yes">Ja, bitte</string>
+    <string name="transround_translation_available_no">Nein, danke</string>
+    
+    <string name="transround_translation_start_app">Übersetzungsapp</string>
+    <string name="transround_translation_start_word">Wort übersetzen</string>
+    <string name="transround_translation_change_language">Sprache ändern</string>
+
+    <string name="transround_application_not_registered">%1$s ist auf Nativer noch nicht registriert. Bitte besuchen Sie die Webseite www.nativer.com, um Ihre Applikation zu registrieren.</string>
+    <string name="transround_change_language_warning">Aktuelle Sprache: %1$s.\nWenn Sie keine Änderungen sehen, haben Sie noch keinem Ausdruck zugestimmt.</string>
+    <string name="transround_select_preferred_language">Um diese Funktion benutzen zu können, geben Sie bitte mindestens zwei bevorzugte Sprachen an. Dies können Sie bei den Applikationseinstellungen in Nativer einstellen.</string>
+
+</resources>

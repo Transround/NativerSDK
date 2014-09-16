@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transround_translator_not_installed_title">Uygulama eksik</string>
+    <string name="transround_translator_not_installed_text">Çeviri uygulaması yerleştirilmedi. Yerleştirmek istiyor musunuz?</string>
+    <string name="transround_notification_ticker">Bu çevirebilen bir uygulama</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">%1$s çevirmek için tiklatın</string>
+    <string name="transround_start_translator_title">Çevirme başlıyor</string>
+    <string name="transround_start_translator_text">Çeviri uygulamasını başlatmak istiyor musunuz?</string>
+    <string name="transround_start_translator_yes">Evet</string>
+    <string name="transround_start_translator_no">Hayır</string>
+    <string name="transround_start_translator_error">Google Play şimdi çalışmıyor. Markete URL %1$s idi</string>
+    
+    <string name="transround_translation_available_title">Çeviri var</string>
+    <string name="transround_translation_available_message">Bu uygulama için bir çeviri var. Bu uygulamayı çevirmek istiyor musunuz?</string>
+    <string name="transround_translation_available_yes">Evet, lütfen</string>
+    <string name="transround_translation_available_no">Hayır, teşekkür ederim</string>
+    
+    <string name="transround_translation_start_app">Uygulamayı çevir</string>
+    <string name="transround_translation_start_word">Sözü çevir</string>
+    <string name="transround_translation_change_language">Dili değiştir</string>
+
+    <string name="transround_application_not_registered">%1$s henüz Nativer’de kayıtlı değildir. Kayıt yapmak için lütfen www.nativer.com sayfaya gidin.</string>
+    <string name="transround_change_language_warning">Şimdiki dil: %1$s.\nHerhangi bir değişiklik göremiyorsanız, hiçbir ifade beğenmediniz.</string>
+    <string name="transround_select_preferred_language">Bu işlevi kullanmak için tercih edilen en az iki dil seçiniz! Bunu Nativer’in uygulama ayarları ekranında yapabilirsiniz.</string>
+
+</resources>

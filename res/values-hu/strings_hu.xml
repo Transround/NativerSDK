@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transround_translator_not_installed_title">Hiányzó alkalmazás</string>
+    <string name="transround_translator_not_installed_text">A fordító alkalmazás nincs telepítve. Kívánja telepíteni?</string>
+    <string name="transround_notification_ticker">Ez egy fordítható alkalmazás</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">Érintse meg a %1$s fordításához</string>
+    <string name="transround_start_translator_title">Fordító Indítása</string>
+    <string name="transround_start_translator_text">El akarja indítani a Fordító alkalmazást?</string>
+    <string name="transround_start_translator_yes">Igen</string>
+    <string name="transround_start_translator_no">Nem</string>
+    <string name="transround_start_translator_error">Hiba történt a Google Play indításakor. A Play URL %1$s volt</string>
+    
+    <string name="transround_translation_available_title">Fordítás elérhető</string>
+    <string name="transround_translation_available_message">Egy fordítás elérhető ehhez az alkalmazáshoz. Szeretné lefordítani?</string>
+    <string name="transround_translation_available_yes">Igen</string>
+    <string name="transround_translation_available_no">Nem</string>
+    
+    <string name="transround_translation_start_app">Alkalmazás fordítása</string>
+    <string name="transround_translation_start_word">Szó fordítása</string>
+    <string name="transround_translation_change_language">Nyelvváltás</string>
+
+    <string name="transround_no_store_available">Nem sikerült alkalmazás áruházat elindítani, mivel sem a Google Play sem a Samsung App nem elérhető és nem engedélyezett a szerveren.</string>
+    
+    <string name="transround_application_not_registered">A(z) %1$s még nincs regisztrálva a Nativerben. Kérjük látogasson el a www.nativer.com oldalra, ahol regisztrálhatja az alkalmazását.</string>
+    <string name="transround_change_language_warning">Jelenlegi nyelv: %1$s\n Ha nem lát semmilyen változást, akkor még nem lájkolt egyetlen kifejezést sem.</string>
+    <string name="transround_select_preferred_language">Kérjük válasszon ki legalább 2 preferált nyelvet a funkció használatához. Ezt a Nativer > Alkalmazás beállítások képernyőjén teheti meg.</string>
+    
+</resources>

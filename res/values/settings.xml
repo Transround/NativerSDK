@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation">
+
+    <string name="store_type">@string/transround_force_google</string>
+    <!-- Preferences -->
+    <string name="transround_shake_enabled">@string/transround_enabled</string>
+ 	<!-- To disable shake feature, change value to: @string/transround_disabled -->
+    <string name="transround_plugin_enabled">@string/transround_enabled</string>
+    <string name="transround_popup_enabled">@string/transround_enabled</string>
+    <string name="transround_splash_mode">@string/transround_splash_always</string>
+    <string name="transround_translation_mode">@string/transround_translation_mode_both</string>
+    <string name="transround_translation_available_mode">first_time_only</string>
+    <!-- The path where the plugin should save images (eg. "/yourapp/images/transround/"). Start and end with a slash '/' -->
+    <string name="transround_image_path">/DCIM/</string>
+    <!-- transroud_check_splash_frequency_ms is one day time in ms 24 * 60 * 60 * 1000 = 86400000 -->
+    <string name="transroud_check_splash_frequency_ms">86400000</string>
+
+    <!-- URLs -->
+    <!-- <string name="transround_translator_market_url_old">market://details?id=eu.appround.applanguagesurvey</string> 
+    <string name="transround_translator_market_url_old">http://apps.samsung.com/venus/topApps/topAppsDetail.as?productId=000000771680</string>
+    <string name="transround_translator_market_url">market://details?id=hu.itware.testapp&amp;referrer=%1$s/%2$d</string>
+    <string name="transround_translator_market_url">http://appround.hu/transround/dl/Transround.apk</string>
+    <string name="transround_translator_market_url">http://apps.samsung.com/venus/topApps/topAppsDetail.as?productId=000000771680</string>
+    -->
+
+    <!-- Samsung PROD server -->
+    <string name="transround_translation_check_service_url"><![CDATA[index.php?route=product/translationservice/checkTranslation&package_name=%1$s&language_code=%2$s&version_code=%3$s]]></string>
+    <string name="transround_splash_update_service_url"><![CDATA[index.php?route=product/translationservice/getSplashScreen&package_name=%1$s&language_code=%2$s]]></string>
+    <string name="transround_notification_check_service_url"><![CDATA[index.php?route=product/translationservice/getTranslatableNotification&package_name=%1$s&language_code=%2$s&version_code=%3$s]]></string>
+    <string name="transround_login_service_url"><![CDATA[index.php?route=account/accountservice/autologin&device_id=%1$s&unique_id=%2$s&google_account=%3$s]]></string>
+    <string name="transround_getapplication_service_url"><![CDATA[index.php?route=product/translationservice/getApplication&sessid=%1$s&package_name=%2$s&language_codes=[\"%3$s\"]]]></string>
+    <string name="transround_htmlui_url"><![CDATA[transround_backend/pluginuidev.php?language=%1$s]]></string>
+
+    <!-- ITWare DEV server -->
+<!--     <string name="transround_translation_check_service_url"><![CDATA[http://192.168.0.46/dev/index.php?route=product/translationservice/checkTranslation&package_name=%1$s&language_code=%2$s&version_code=%3$s]]></string> -->
+<!--     <string name="transround_splash_update_service_url"><![CDATA[http://192.168.0.46/dev/index.php?route=product/translationservice/getSplashScreen&package_name=%1$s&language_code=%2$s]]></string> -->
+<!--     <string name="transround_notification_check_service_url"><![CDATA[http://192.168.0.46/dev/index.php?route=product/translationservice/getTranslatableNotification&package_name=%1$s&language_code=%2$s&version_code=%3$s]]></string> -->
+
+    <!-- Do not tamper -->
+    <string name="transround_splash_always">always</string>
+    <string name="transround_splash_never">never</string>
+    <string name="transround_splash_second_time_only">second_time_only</string>
+    <string name="transround_splash_text1">default text1</string>
+    <string name="transround_splash_text2">default text2</string>
+    <string name="transround_enabled">enabled</string>
+    <string name="transround_disabled">disabled</string>
+    <string name="transround_translation_mode_notification">notification</string>
+    <string name="transround_translation_mode_volume_key">volume_key</string>
+    <string name="transround_translation_mode_both">both</string>
+    <string name="transround_translation_mode_none">none</string>
+    <string name="transround_donttouchthis">DontTouchThis</string>
+    <string name="transround_settings_title">Nativer settings</string>
+    
+    <string name="transround_force_samsung">force_samsung</string>
+    <string name="transround_force_google">force_google</string>
+    <string name="transround_server_setting">server_setting</string>
+</resources>

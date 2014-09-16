@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transround_translator_not_installed_title">Falta la aplicación</string>
+    <string name="transround_translator_not_installed_text">La aplicación Traductor no está instalada. Quiere instalarla?</string>
+    <string name="transround_notification_ticker">Se puede traducir esta aplicación</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">Haga click para traducir %1$s</string>
+    <string name="transround_start_translator_title">Lanzando Traductor</string>
+    <string name="transround_start_translator_text">Quiere lanzar la aplicación Traductor?</string>
+    <string name="transround_start_translator_yes">Sí</string>
+    <string name="transround_start_translator_no">No</string>
+    <string name="transround_start_translator_error">Error lanzando Google Play. Falta Market URL %1$s</string>
+    
+    <string name="transround_translation_available_title">Traducción es accesible</string>
+    <string name="transround_translation_available_message">Una traducción es accesible para esa aplicación. Quiere traducir la aplicación?</string>
+    <string name="transround_translation_available_yes">Sí</string>
+    <string name="transround_translation_available_no">No, gracias</string>
+    
+    <string name="transround_translation_start_app">Traducir aplicación</string>
+    <string name="transround_translation_start_word">Traducir palabra</string>
+    <string name="transround_translation_change_language">Cambiar de idioma</string>
+
+    <string name="transround_application_not_registered">%1$s todavía no está registrado en Nativer. Por favor, vaya al www.nativer.com para registrar su aplicación.</string>
+    <string name="transround_change_language_warning">La lengua actual es: %1$s.\n Si Usted no ve ningún cambio, así todavía no ha evaluado ninguna frase.</string>
+    <string name="transround_select_preferred_language">Por favor, elija como mínimo dos lenguas para usar esta funcción. Usted puede hacer esto en la pantalla de ajustos de la aplicación Nativer.</string>
+
+</resources>

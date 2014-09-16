@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transround_translator_not_installed_title">Manque de l’application</string>
+    <string name="transround_translator_not_installed_text">L’application de Traduction n’est pas installée. Souhaitez-vous l’installer?</string>
+    <string name="transround_notification_ticker">C’est une application traduisible</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">Touchez pour traduire %1$s</string>
+    <string name="transround_start_translator_title">Commencer à traduire</string>
+    <string name="transround_start_translator_text">Souhaitez-vous démarrer l’application de Traduction?</string>
+    <string name="transround_start_translator_yes">Oui</string>
+    <string name="transround_start_translator_no">Non</string>
+    <string name="transround_start_translator_error">Erreur au démarrage de Google Play. URL de marché était %1$s</string>
+    
+    <string name="transround_translation_available_title">Traduction disponible</string>
+    <string name="transround_translation_available_message">Une traduction est disponible pour cette application. Voulez-vous traduire cette application?</string>
+    <string name="transround_translation_available_yes">Oui, s’il vous plaît</string>
+    <string name="transround_translation_available_no">Non, merci</string>
+    
+    <string name="transround_translation_start_app">Traduire l’application</string>
+    <string name="transround_translation_start_word">Traduire le mot</string>
+    <string name="transround_translation_change_language">Changer la langue</string>
+    
+</resources>

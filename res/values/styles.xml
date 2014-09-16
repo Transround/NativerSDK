@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+        <!-- Label Styles -->
+
+    <style name="label_medium_black">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="label_small_black">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="label_xlarge_gray">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="label_large_gray">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="label_xlarge_white">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    
+    <style name="label_xlarge_black">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/headline_black</item>
+        <item name="android:textColorHint">@color/headline_black</item>
+    </style>
+
+    <style name="label_xlarge_white_shadow" parent="@style/label_xlarge_white">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+    
+    <style name="label_xlarge_black_shadow" parent="@style/label_xlarge_black">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="label_large_white">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    
+    <style name="label_large_black">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/headline_black</item>
+        <item name="android:textColorHint">@color/headline_black</item>
+    </style>
+    
+    <style name="label_large_orange">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/newdesign_orange</item>
+        <item name="android:textColorHint">@color/newdesign_orange</item>
+    </style>
+    
+    <style name="label_large_turquoise">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/newdesign_turquoise</item>
+        <item name="android:textColorHint">@color/newdesign_turquoise</item>
+    </style>
+
+    <style name="label_large_white_shadow" parent="@style/label_large_white">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+    
+    <style name="label_large_black_shadow" parent="@style/label_large_black">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="label_medium_white">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    
+    <style name="label_medium_gray">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/headline_subtitle_gray</item>
+        <item name="android:textColorHint">@color/headline_subtitle_gray</item>
+    </style>
+    
+    <style name="label_medium_orange">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/newdesign_orange</item>
+        <item name="android:textColorHint">@color/newdesign_orange</item>
+    </style>
+    
+     <style name="label_medium_turquoise">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/newdesign_turquoise</item>
+        <item name="android:textColorHint">@color/newdesign_turquoise</item>
+    </style>
+
+    <style name="label_medium_white_shadow" parent="@style/label_medium_white">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="label_xsmall_white">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="label_small_white">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    
+    <style name="label_small_gray">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/headline_subtitle_gray</item>
+        <item name="android:textColorHint">@color/headline_subtitle_gray</item>
+    </style>
+
+    <style name="label_home_orange">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/home_screen_orange</item>
+        <item name="android:textColorHint">@color/home_screen_orange</item>
+    </style>
+
+    <style name="label_home_orange_huge">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/home_screen_orange</item>
+        <item name="android:textColorHint">@color/home_screen_orange</item>
+    </style>
+
+    <!-- Colors -->
+    <color name="window_background">#EFF0F3</color>
+    <color name="headline_black">#1F2932</color>
+    <color name="headline_subtitle_gray">#71777B</color>
+    <color name="headline_bottomedge_gray">#D9DADD</color>
+    <color name="headline_light_gray">#CFD0D3</color>
+    <color name="inputbox_edge_gray">#CCCCCC</color>
+    <color name="inputbox_placeholder_gray">#959595</color>
+    <color name="error_message_red">#FF4F4F</color>
+    <color name="button_text_gray">#666666</color>
+    <color name="header_background">#141616</color>
+    <color name="newdesign_turquoise">#6bb0a0</color>
+    <color name="newdesign_orange">#e67336</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="dark_gray">#a9a9a9</color>
+    <color name="extra_light_gray">#e8e8e8</color>
+    <color name="seashell">#fff5ee</color>
+    <color name="moccasin">#ffe4b5</color>
+    <color name="tan">#d2b48c</color>
+    <color name="orange">#ffa500</color>
+    <color name="warning">#cc9f90</color>
+    <color name="home_screen_orange">#ff9b00</color>
+    <color name="requested_yellow">#ffc040</color>
+    <color name="original_green">#48c048</color>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation">
+
+    <string name="transround_translator_not_installed_title">Missing application</string>
+    <string name="transround_translator_not_installed_text">The Translator application is not installed. Would you like to install it?</string>
+    <string name="transround_notification_ticker">This is a translatable app</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">Tap to translate %1$s</string>
+    <string name="transround_notification_setting_text">Tap to open Nativer language settings</string>
+
+    <string name="transround_start_translator_title">Starting Translator</string>
+    <string name="transround_start_translator_text">Would you like to start the Translator application?</string>
+    <string name="transround_start_translator_yes">Yes</string>
+    <string name="transround_start_translator_no">No</string>
+    <string name="transround_start_translator_error">An error has occurred while trying to launch an application store.</string>
+  
+    <string name="transround_translation_available_title">Translation available</string>
+    <string name="transround_translation_available_message">A translation is available for this application. Do you want to translate this app?</string>
+    <string name="transround_translation_available_yes">Yes, please</string>
+    <string name="transround_translation_available_no">No, thanks</string>
+    <string name="transround_translation_start_app">Translate app</string>
+    <string name="transround_translation_start_word">Translate word</string>
+    <string name="transround_translation_change_language">Change language</string>
+    
+    <string name="transround_no_store_available">Unable to launch application store as neither Google Play nor Samsung Apps are available and enabled on the server</string>
+    
+    <string name="transround_application_not_registered">%1$s is not yet registered in Nativer. Please go to www.nativer.com to register your application.</string>
+    <string name="transround_change_language_warning">Current language is: %1$s\nIf you don\'t see any changes, you haven\'t liked any phrase yet</string>
+    <string name="transround_select_preferred_language">Please select at least two preferred languages to use this function. You can do this in the application settings screen of Nativer.</string>
+    <string name="transround_loading_translation">Loading translation...</string>
+
+</resources>

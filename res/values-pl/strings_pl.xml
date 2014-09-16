@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transround_translator_not_installed_title">Brakuje aplikacji</string>
+    <string name="transround_translator_not_installed_text">Aplikacja Tłumacz nie jest zainstalowana. Czy chcesz go zainstalować?</string>
+    <string name="transround_notification_ticker">Ta applikacja jest do tłumaczenia</string>
+    <string name="transround_notification_title">Nativer</string>
+    <string name="transround_notification_text">Dotknij, aby przetłumaczyć %1$s</string>
+    <string name="transround_start_translator_title">Uruchom Tłumacz</string>
+    <string name="transround_start_translator_text">text">Chcesz uruchomić aplikację Tkumacz?</string>
+    <string name="transround_start_translator_yes">Tak</string>
+    <string name="transround_start_translator_no">Nie</string>
+    <string name="transround_start_translator_error">Błąd podczas uruchamiania Google Play. Market URL był %1$s</string>
+    
+    <string name="transround_translation_available_title">Tłumaczenie dostępne</string>
+    <string name="transround_translation_available_message">Tłumaczenie jest dostępny dla tej aplikacji. Czy chcesz przetłumaczyć tę aplikację?</string>
+    <string name="transround_translation_available_yes">Tak, proszę</string>
+    <string name="transround_translation_available_no">Nie, dziękuję</string>
+    
+    <string name="transround_translation_start_app">Aplikacja Tłumacz</string>
+    <string name="transround_translation_start_word">Przetłumacz słowa</string>
+    <string name="transround_translation_change_language">Zmień język</string>
+    
+    <string name="transround_application_not_registered">%1$s jest jeszcze nie zarejesrtowany w Nativer. Proszę przejść na strone www.nativer.com do zarejestrowania aplikacji</string>
+    <string name="transround_change_language_warning">Aktualny język teraz: %1$s\nIf jeszcze nie widać żadnych zmian, i jeszcze nie polubiłeś żadnych frazy</string>
+    <string name="transround_select_preferred_language">Wybierz co najmniej dwa języki-korzystne, aby skorzystać z tej funkcji. Można to zrobić na ekranie ustawień aplikacji Nativer</string>
+
+</resources>
