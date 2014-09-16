@@ -5,7 +5,7 @@ Nativer SDK
 
 <h1>1.&nbsp;&nbsp; Glossary:</h1>
 
-<p><b>Host Application</b>: Is the original Application of a developer. The [Demo App Localization] (https://github.com/Transround/LocalizationDemoDev) is an example of a host application. By adding the Nativer SDK to it, becomes NLE (Nativer Localization Enabled) Application</p>
+<p><b>Host Application</b>: Is the original Application of a developer. The App Localization Demo (https://github.com/Transround/LocalizationDemoDev) is an example of a host application. By adding the Nativer SDK to it, becomes NLE (Nativer Localization Enabled) Application</p>
 
 <p><b>NLE Application</b>: Stands for Nativer Localization Enabled Application. This is an original Application of a developer, in which the Nativer SDK has been embedded.</p>
 
