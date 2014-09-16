@@ -65,7 +65,7 @@ Nativer SDK
 
 <p>Setting up Nativer SDK requires just a little bit more effort than adding an ordinary Android library to your project.</p>
 
-<p>Download file Nativer SDKDist.zip from our Developer Website, and unpack it on a temporary folder of your computer.(e.g.:E:\NativerSDK).</p>
+<p>Download file Nativer SDK from Github (https://github.com/Transround/NativerSDK), and unpack it on a temporary folder of your computer.(e.g.:E:\NativerSDK).</p>
 
 <p><strong>Import NativerSDK to Eclipse</strong></p>
 
