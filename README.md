@@ -5,13 +5,13 @@ Nativer SDK
 
 <h1>1.&nbsp;&nbsp; Glossary:</h1>
 
-<p>Host Application: Is the original Application of a developer. By adding the Nativer SDK to it, becomes NLE Application</p>
+<p><b>Host Application</b>: Is the original Application of a developer. The [Demo App Localization] (https://github.com/Transround/LocalizationDemoDev) is an example of a host application. By adding the Nativer SDK to it, becomes NLE (Nativer Localization Enabled) Application</p>
 
-<p>NLE Application: Stands for Nativer Localization Enabled Application. This is an original Application of a developer, in which the Nativer SDK has been embedded.</p>
+<p><b>NLE Application</b>: Stands for Nativer Localization Enabled Application. This is an original Application of a developer, in which the Nativer SDK has been embedded.</p>
 
-<p>Nativer SDK: A set of functions and libraries, which enable the host Application to become easily translatable in the Nativer Ecosystem</p>
+<p><b>Nativer SDK</b>: A set of functions and libraries, which enable the host Application to become easily translatable in the Nativer Ecosystem</p>
 
-<p>Nativer Application: This is Transround&rsquo;s own application, called Nativer, which implements majority of the functionality of the Nativer Ecosystem, like requesting localizations, downloading ready localizations, translate, proof reading, support, etc.</p>
+<p><b>Nativer Application</b>: This is Transround&rsquo;s own application, called Nativer, which implements majority of the functionality of the Nativer Ecosystem, like requesting localizations, downloading ready localizations, translate, proof reading, support, etc.</p>
 
 <h1>2.&nbsp;&nbsp; Nativer SDK</h1>
 
