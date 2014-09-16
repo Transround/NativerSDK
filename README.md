@@ -75,9 +75,9 @@ Nativer SDK
 	<li>Carefully designed and coded for minimal memory consumption, tested for memory leaks.</li>
 </ul>
 
-<p>&nbsp;</p>
-
 <h1>3.&nbsp; Connection to other Applications</h1>
+
+<p>&nbsp;</p>
 
 <p>During its function, Nativer SDK occasionally (upon functionality need) may call some functions or libraries of the Nativer Application, which is also installed on the user&rsquo;s device. The reason for this is to keep the Nativer SDK as light as possible, and ensure in the meantime that all necessary runtime libraries are available in the right version. Therefore several functions, which might be needed to be available both in the NLE Application and the Nativator Application are implemented in one single place only: the Nativer Application, and called by the NLE App when needed.</p>
 
@@ -89,9 +89,9 @@ Nativer SDK
 	<li>The solution is fully documented</li>
 </ul>
 
-<p>&nbsp;</p>
-
 <h1>4.&nbsp; Dynamic resource handling</h1>
+
+<p></p>
 
 <p>Translations (localizations) are stored by the Nativer SDK as dynamic resources. This is how different localizations which are originally not part of the host Application will become available and usable by the NLE Application. The Nativer SDK simply dynamically (i.e. runtime) &ldquo;reads&rdquo; from its own database the necessary strings or phrases and replaces on the screen of the Application the original language texts with the translated ones.</p>
 
@@ -108,13 +108,13 @@ Nativer SDK
 
 <h1>SDK integration</h1>
 
+<p></p>
+
 <h1>1.How does it work</h1>
 
 <p>To make your life easier, Nativer SDK uses AspectJ to make the necessary changes in your code instead of you. AspectJ is the Java implementation of Aspect Oriented Programming (AOP). The idea of AOP is to inject code fragments to well-defined places in an application without modifying the source code. AspectJ uses code weaving technology to inject additional code at compile time which means your source code remains intact but your compiled application will contain everything required.</p>
 
 <p>In order to compile code with aspects in Eclipse you need to install the <em>AspectJ Development Tools</em> plugin.</p>
-
-<p>&nbsp;</p>
 
 <h1>2.General work considerations</h1>
 
@@ -348,13 +348,11 @@ Nativer SDK
 
 <h1>8.Build your project.</h1>
 
+<p></p>
+
 <p>It should now have all Nativer capabilities, and should display the notification and the splash screen, provided as they are enabled in Nativer and on your master server.</p>
 
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
+<p></p>
 
 <h2>Define the scope of translation</h2>
 
@@ -379,5 +377,3 @@ Nativer SDK
 <p>You are almost done. Your application became translatable to any supported language. Now please follow the steps in Go To Market.</p>
 
 <p><a href="http://nativer01.nativer.com/prod/admin/index.php?route=common/information&amp;token=[__token__]&amp;information_id=42&amp;menu=devres">Go to Market</a></p>
-
-
