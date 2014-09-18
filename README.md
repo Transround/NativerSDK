@@ -5,6 +5,14 @@ Nativer SDK
 
 <h1>SDK integration</h1>
 
+<p></p>
+
+The aim of this readme is to describe how to integrate the App Localization Demo app with the Nativer SDK in order to try the localization capabilities of Nativer.
+
+In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/).
+
+<p></p>
+
 <h1>Requirements</h1>
 
 <p></p>
@@ -195,33 +203,13 @@ protected void createMyContents() {
 
 <p></p>
 
-<p>It should now have all Nativer capabilities, and should display the notification and the splash screen, provided as they are enabled in Nativer and on your master server.</p>
+<p>It should now support all Nativer capabilities.</p>
 
 <p></p>
 
-<h2>Define the scope of translation</h2>
-
-<p>Upload the default language resource files of your application in <strong><em>Catalog -&gt; Applications and Categories;</em></strong> select the application and use the links in <strong>Action </strong>column</p>
-
-<p>Data Cleaning. After uploading the resource files you get automatically into a data cleaning list of all your resources. Plsease deselect all items which should not be translated. (For example Application name, links, database details, etc.)</p>
-
 <h2>Testing translatability</h2>
 
-<p>Install your NLE app to a test device (or emulator)</p>
-
-<p>Download and install Nativer app: If you did not download it already, please refer back to Step4, Nativer downloadables. &nbsp;</p>
-
-<p>Start Nativer app and login with tester account (<em><strong>Catalog -&gt; Test customer accounts</strong></em>). This will set Nativer default language to Pseudo language for testing purposes.</p>
-
-<p>Check your NLE app.&nbsp; Go to the For You tab (or Shop tab) of Nativer, find your NLE app on the list, and tap Download on the Pseudo Language translation of it. Nativer will automatically download the pseudo tranlation file, switch your app display language to Pseudo, and start your application. Do not worry! Pseudo is not a new language you have to learn! This simply means that all translatable strings will be the original ones you just uploaded to our server, except the first character, which is replaced with a star. This way you can check through your app, that all desired content became translatable. Each string, phrase, label, etc, of your application, which has the star as first character, will be later translatable by Nativer technology.</p>
-
-<p>If you find issues, non-translatable elements which should be translatable, you need to review your application and its resources. and need to repeat the process from resource upload.</p>
-
-<p>If you found no issues than your app technically became NLE. Please go to <em><strong>Catalog -&gt; Applications and Categories</strong></em> and select action <strong>EDIT </strong>for your application. On the new page go to <strong>Data Tab</strong>, and on the bottom change the status to &ldquo;<strong>Ready to Publish</strong>&rdquo;.&nbsp;</p>
-
-<p>You are almost done. Your application became translatable to any supported language. Now please follow the steps in Go To Market.</p>
-
-<p><a href="http://nativer01.nativer.com/prod/admin/index.php?route=common/information&amp;token=[__token__]&amp;information_id=42&amp;menu=devres">Go to Market</a></p>
+<p>Install your NLE app to a test device (or emulator).</p>
 
 <h1>Glossary:</h1>
 
