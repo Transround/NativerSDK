@@ -5,6 +5,16 @@ Nativer SDK
 
 <h1>SDK integration</h1>
 
+<h1>Requirements</h1>
+
+<p></p>
+
+- Eclipse with ADT bundle
+- AspectJ plugin
+- Android v7 app compat library
+- Google API (minimum API level 15)
+
+<p></p>
 <p></p>
 
 <h1>1.How does it work</h1>
@@ -19,19 +29,18 @@ Nativer SDK
 
 <p>Import your application project(s) into the newly created Workspace. (File / New / Android project from existing code.). Do not forget to select the &ldquo;Copy projects into workspace&rdquo; checkbox, in order to keep your original sources intact.</p>
 
-<p>Check the build target of ALL projects and make sure that you are building with Google APIs, and for at least API level 17.</p>
+<p>Check the build target of ALL projects and make sure that you are building with Google APIs, and for at least API level 15.</p>
 
-<p>Make sure that a Java JDK of version 1.6 is installed.</p>
+<p>Make sure that a Java JDK of version 6 is installed.</p>
 
-<p><strong><em>Note</em></strong><em>: though the solution was validated with Java 1.6, some preliminary tests show, that works also fine with version 1.7. We are working hard to validate the 1.7 version as well. As soon as the validation is ready, it will be communicated through our website.</em></p>
-
-<p>&nbsp;</p>
+<p></p>
 
 <h1>3.Installing AspectJ</h1>
 
 <p>The AspectJ Development Tools is a standard Eclipse plugin which can be downloaded and installed by Eclipse the same way you installed the Android Development Tools.</p>
 
-<p>Select <strong><em>&bdquo;Help/Install New Software&hellip;&rdquo;</em></strong> in Eclipse and click on <strong><em>&bdquo;Add&hellip;&rdquo;</em></strong>. The Repository Location depends on which version of Eclipse you use:</p>
+Select **"Help/Install New Software..."** in Eclipse and click on 
+**Add...** The Repository Location depends on which version of Eclipse you use:</p>
 
 <ul>
 	<li>In case of Eclipse Helios: <a href="http://download.eclipse.org/tools/ajdt/36/update">http://download.eclipse.org/tools/ajdt/36/update</a></li>
@@ -49,7 +58,7 @@ Nativer SDK
 
 <p><strong><em>2</em></strong><em>. Due to lack of official AspectJ version, the latest Kepler 4.3 release of Eclipse is actually not supported by Nativer. As soon as AspectJ for Kepler becomes available, it will be validated by us, and communicated via our website</em></p>
 
-<p>&nbsp;</p>
+<p></p>
 
 <h1>4.Converting your Android project to an AspectJ project</h1>
 
@@ -57,27 +66,33 @@ Nativer SDK
 
 <p><img alt="" src="http://nativer01.nativer.com/prod/image/data/IntegrationDoc/ConvertProjectToAspectJ.png" style="height:119px; width:605px" /></p>
 
-<p><strong><em>Note:</em></strong><em> Don&rsquo;t worry, a project can have multiple natures in Eclipse, so your project keeps its Android nature and you can undo this change easily in the future should you change your mind.</em></p>
+**Note:** Don't worry, a project can have multiple natures in Eclipse, so your project keeps its Android nature and you can undo this change easily in the future should you change your mind.
 
-<p>&nbsp;</p>
+<p></p>
 
 <h1>5.Setting up Nativer SDK in your project</h1>
 
+<p></p>
+
 <p>Setting up Nativer SDK requires just a little bit more effort than adding an ordinary Android library to your project.</p>
 
-<p>Download file Nativer SDK from Github (https://github.com/Transround/NativerSDK), and unpack it on a temporary folder of your computer.(e.g.:E:\NativerSDK).</p>
+Check out Nativer SDK from Github (https://github.com/Transround/NativerSDK).
 
-<p><strong>Import NativerSDK to Eclipse</strong></p>
+**Import NativerSDK to Eclipse**
 
-<p>Import the NativerSDK project from the temporary folder into the Workspace. (File / Import / Existing Android code into Workspace.) Please do not forget to check the &ldquo;Copy project into workspace&rdquo; option!</p>
+Import the NativerSDK project into your workspace.
+- File/Import... and then choose "Existing Android Code Into Workspace". Please do not forget to check the "Copy project into workspace" option.
+- Please note that in case you checked out Nativer SDK into your workspace directly then you have to use File/Import... and then "General/Existing Projects into Workspace" 
 
-<p><strong>Set Android Support Library for the SDK and your project</strong></p>
+<p><strong>Set Android Support Library v7 for the SDK and your project</strong></p>
 
-<p>After importing, right-click to the NativerSDK project and use the Android tools / Add Support Library&hellip; feature. The Android SDK Manager will download the latest Android Support Library. Please accept the license then press Install.</p>
+In case you need instructions on how to set library support please see the following link: https://developer.android.com/tools/support-library/setup.html#libs-with-res
+
+Please add Android Support Library v7 to the Android library dependency to  Nativer SDK project. (Right click on Nativer SDK project > Properties > Android > Add...)  
+
+<p></p>
 
 <p>Do the same procedure for your project.</p>
-
-<p>This will guarantee that the support libraries will be the same versions (if there is any in your project).</p>
 
 <h2>Add NativerSDK to your Project.</h2>
 
@@ -85,17 +100,19 @@ Nativer SDK
 
 <p><img alt="" src="http://nativer01.nativer.com/prod/image/data/IntegrationDoc/AddNativerSDKToProject.png" style="height:598px; width:598px" /></p>
 
+<p></p>
+
 <p><strong>Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path.</strong></p>
 
 <p>Right-click your project and go to Properties. Select AspectJ Build on the left of the screen. Than on the main part of the Properties screen select the Aspect Path tab.</p>
 
-<p>Press the Add Project&hellip; button, then select the NativerSDK project and click OK.</p>
+<p>Press the Add Project... button, then select the NativerSDK project and click OK.</p>
 
-<p>Press the Add External JARs button and go to your temporary folder. There you will find the nativersdkplugin.jar. Select this file and press OK. Your Properties screen will look very similar to the picture below. After you added the SDK project and the jar file, press OK to go back to the projects list.</p>
+<p>Press the Add External JARs button, you will find the nativersdkplugin.jar in NativerSDK project folder. Select this file and press OK. Your Properties screen will look very similar to the picture below. After you added the SDK project and the jar file, press OK to go back to the projects list.</p>
 
 <p><img alt="" src="http://nativer01.nativer.com/prod/image/data/IntegrationDoc/AddNativerSDKandNativerJARToAspectJ.png" style="height:598px; width:598px" /></p>
 
-<p><strong>After adding the SDK and the jar to the AspectJ&rsquo;s build path also add them to the Java Build Path.</strong></p>
+<p><strong>After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path.</strong></p>
 
 <p>Please check Order and Export tab of the Java Build Path. Right-click to your project, go to the Properties menu. On the left select Java Build Path, then switch to the Order and Export tab. Please make sure that NativerSDK and the nativersdkplugin.jar are checked, and their order is like in the picture below:</p>
 
@@ -103,127 +120,56 @@ Nativer SDK
 
 <p>Press OK, then clean the NativerSDK project and your project as well.</p>
 
-<p>For this use the Project / Clean&hellip; in the upper menubar of Eclipse for cleaning the SDK and your project. Select Clean projects selected below, check your project and the NativerSDK then press OK.</p>
+<p>For this use the Project / Clean... in the upper menubar of Eclipse for cleaning the SDK and your project. Select Clean projects selected below, check your project and the NativerSDK then press OK.</p>
 
-<h2>Declare the Nativer SDK&rsquo;s service in the manifest file in your application:</h2>
+<h2>Declare the Nativer SDK's service in the manifest file in your application:</h2>
 
 <p>Copy the following text sequence, and paste it into the AndroidManifest.xml file of your project.</p>
 
-<p>&lt;service android:name=<em>&quot;com.transround.plugin.service.PluginInterfaceService&quot;</em> &gt;</p>
+```xml
+<service android:name="com.transround.plugin.service.PluginInterfaceService" >
+    <intent-filter>
+        <action android:name="com.transround.tools.PING" />
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;intent-filter&gt;</p>
+        <category android:name="com.transround.tools.TRANSLATOR" />
+    </intent-filter>
+</service>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;action android:name=<em>&quot;com.transround.tools.PING&quot;</em> /&gt;</p>
+<activity android:name="com.transround.plugin.activity.RefreshScreen" />
+```
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;category android:name=<em>&quot;com.transround.tools.TRANSLATOR&quot;</em> /&gt;</p>
+Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/intent-filter&gt;</p>
+Also make sure you do not paste the text inside another application or service, or any other declaration.
 
-<p>&nbsp;&lt;/service&gt;</p>
+Please also make sure you have the following text outside the section:
 
-<p>&nbsp;&lt;activity android:name=<em>&quot;com.transround.plugin.activity.RefreshScreen&quot;</em> /&gt;</p>
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
 
-<p>Please be careful, and make sure the above text is copied into your manifest file before the&nbsp; &lt;/application&gt; closing tag&nbsp; declaration.</p>
+<p></p>
 
-<p>Also make sure you do not paste the text inside an other application or service, or any other declaration.</p>
+<h1>6.Protecting parts of your application from the Nativer SDK</h1>
 
-<p>Please also make sure you have the following text outside the section:</p>
+<p>If there are some parts of your application which you don't want to be translated for some reason then here is how you can tell Nativer to avoid them.</p>
 
-<p>&nbsp;&lt;uses-permission android:name=<em>&quot;android.permission.INTERNET&quot;</em> /&gt;</p>
+<p>You can use the ``` @DontTouchThis ``` annotation to tell the SDK which part of your code should be left intact. You can use this annotation on a whole class or on a method. For example if you want a specific Activity not to be modified then you can annotate your Activity class like this:</p>
 
-<p>&nbsp;&lt;uses-permission android:name=<em>&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;</em> /&gt;</p>
+```java
+…
+import com.transround.plugin.aspect.TransroundAspect.DontTouchThis;
 
-<p>&nbsp;</p>
-
-<h1>6.Changing default SDK settings in your application</h1>
-
-<p>The Nativer SDK can be configured using the Nativer application but you can also change the default settings for you application.</p>
-
-<p>You can change the following in res/values/settings.xml:</p>
-
-<h2>transround_plugin_enabled</h2>
-
-<p>Sets wether the Nativer SDK&rsquo;s functionality is enabled by default.</p>
-
-<p><strong>Valid values:</strong></p>
-
-<ul>
-	<li><strong>@string/transround_enabled</strong> &ndash; plugin is enabled</li>
-	<li><strong>@string/transround_disabled</strong> &ndash; plugin is disabled</li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h2>transround_popup_enabled</h2>
-
-<p>Sets whether a confirmation dialog shows before starting the translator app.</p>
-
-<p><strong>Valid values:</strong></p>
-
-<ul>
-	<li><strong>@string/transround_enabled</strong> &ndash; confirmation dialog is enabled</li>
-	<li><strong>@string/transround_disabled</strong> &ndash; confirmation dialog is disabled</li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h2>transround_splash_mode</h2>
-
-<p>Sets the default behavior of the Nativer splash screen.</p>
-
-<p><strong>Valid values:</strong></p>
-
-<ul>
-	<li><strong>@string/transround_splash_always</strong> &ndash; always show the splash screen</li>
-	<li><strong>@string/transround_splash_second_time_only</strong> &ndash; the splash screen shows only the second time the app is started (first time is spared for the original splash screen)</li>
-	<li><strong>@string/transround_splash_never</strong> &ndash; never show the splash screen</li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h2>transround_translation_mode</h2>
-
-<p>Sets the default method used to start the translator app.</p>
-
-<p><strong>Valid values:</strong></p>
-
-<ul>
-	<li><strong>@string/transround_translation_mode_notification</strong> &ndash; use notifications to start the translator app</li>
-	<li><strong>@string/transround_translation_mode_volume_key</strong> &ndash; use volume key combination to start the translator app</li>
-	<li><strong>@string/transround_translation_mode_both</strong> &ndash; use both methods</li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h1>7.Protecting parts of your application from the Nativer SDK</h1>
-
-<p>If there are some parts of your application which you don&rsquo;t want to be translated for some reason then here&rsquo;s how you can tell Nativer to avoid them.</p>
-
-<p>You can use the <strong>@DontTouchThis</strong> annotation to tell the SDK which part of your code should be left intact. You can use this annotation on a whole class or on a method. For example if you want a specific Activity not to be modified then you can annotate your Activity class like this:</p>
-
-<p><strong>&hellip;</strong></p>
-
-<p><strong>import</strong> com.transround.plugin.aspect.TransroundAspect.DontTouchThis;</p>
-
-<p>&nbsp;</p>
-
-<p>@DontTouchThis</p>
-
-<p><strong>public</strong> <strong>class</strong> MyProtectedActivity <strong>extends</strong> Activity {</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Override</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>public</strong> <strong>void</strong> onCreate(Bundle savedInstanceState) {</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>super</strong>.onCreate(savedInstanceState);</p>
-
-<p>&hellip;</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
-
-<p>}</p>
+@DontTouchThis
+public class MyProtectedActivity extends Activity {
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+             super.onCreate(savedInstanceState);
+…
+       }
+}
+```
 
 <p>This way nothing will be affected by the SDK in this Activity.</p>
 
@@ -239,11 +185,23 @@ Nativer SDK
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
 
-<p>This way myAdapter won&rsquo;t be affected by the plugin but everything else will be.</p>
+```java
+@DontTouchThis
+
+protected void createMyContents() {
+
+…
+
+     mySpinner.setAdapter(myAdapter);
+
+}
+```
+
+<p>This way myAdapter won't be affected by the plugin but everything else will be.</p>
 
 <p>&nbsp;</p>
 
-<h1>8.Build your project.</h1>
+<h1>7. Build your project.</h1>
 
 <p></p>
 
