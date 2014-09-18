@@ -199,20 +199,18 @@ protected void createMyContents() {
 
 <p>&nbsp;</p>
 
-<h1>7. Build your project.</h1>
+<h1>7. Build and test the demo app project.</h1>
 
 <p></p>
 
 <p>It should now support all Nativer capabilities.</p>
 
-<p></p>
-
-<h2>Testing translatability</h2>
-
-<p>Install your NLE app to a test device (or emulator) and start it.
+<p>Install the app to a test device (or emulator) and start it.
 The app will display an intro page that will help you to try Nativer localization features.
 
-In order to try the translation feature you will also need the Nativer app. The demo app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
+<p></p>
+
+Note: In order to try the translation feature you will also need the Nativer app. The demo app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
 
 </p>
 
