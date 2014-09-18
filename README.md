@@ -209,9 +209,14 @@ protected void createMyContents() {
 
 <h2>Testing translatability</h2>
 
-<p>Install your NLE app to a test device (or emulator).</p>
+<p>Install your NLE app to a test device (or emulator) and start it.
+The app will display an intro page that will help you to try Nativer localization features.
 
-<h1>Glossary:</h1>
+In order to try the translation feature you will also need the Nativer app. The demo app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
+
+</p>
+
+<h1>Glossary</h1>
 
 <p><b>Host Application</b>: Is the original Application of a developer. The App Localization Demo (https://github.com/Transround/LocalizationDemoDev) is an example of a host application. By adding the Nativer SDK to it, becomes NLE (Nativer Localization Enabled) Application</p>
 
