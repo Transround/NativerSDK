@@ -9,7 +9,7 @@ Nativer SDK
 
 The aim of this readme is to describe how to integrate the App Localization Demo app with the Nativer SDK in order to try the localization capabilities of Nativer.
 
-In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/).
+In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
 <p></p>
 
