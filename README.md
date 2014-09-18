@@ -175,16 +175,6 @@ public class MyProtectedActivity extends Activity {
 
 <p>You can also annotate a method to protect an Adapter for example when you don&rsquo;t want the data in your Spinner changed:</p>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @DontTouchThis</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>protected</strong> <strong>void</strong> createMyContents() {</p>
-
-<p>&hellip;</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mySpinner.setAdapter(myAdapter);</p>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
-
 ```java
 @DontTouchThis
 
