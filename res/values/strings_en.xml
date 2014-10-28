@@ -30,5 +30,7 @@
     <string name="transround_change_language_warning">Current language is: %1$s\nIf you don\'t see any changes, you haven\'t liked any phrase yet</string>
     <string name="transround_select_preferred_language">Please select at least two preferred languages to use this function. You can do this in the application settings screen of Nativer.</string>
     <string name="transround_loading_translation">Loading translation...</string>
+    
+    <string name="apprequest_sent">Request sent</string>
 
 </resources>

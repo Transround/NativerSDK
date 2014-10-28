@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ll_itw_alert_popup_root"
+    android:id="@+id/ll_alert_popup_root"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_vertical|center_horizontal"
-    android:layout_margin="15dp"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginBottom="70dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="100dp"
     android:background="@drawable/bg_popup"
-    android:gravity="center_vertical|center_horizontal"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/tv_alert_text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:gravity="center_vertical|center_horizontal"
-        android:padding="20dp"
+        android:text="When you start an Activity from a notification, you must preserve the user&apos;s expected navigation experience. "
         android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="#1990fe" />
+        android:textColor="@color/extra_light_gray" />
 
     <Button
-        android:id="@+id/btn_itw_alert_popup_ok"
+        android:id="@+id/btn_alert_popup_ok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="40dp"
