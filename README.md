@@ -1,9 +1,9 @@
 Nativer SDK
 ===========
 
-<b>If you would like to explore the localization features of Nativer SDK and would like to try integrating the SDK, download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the below detailed instructions.</b>
+<b>Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. If you would like to explore it download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the detailed instructions below.</b>
 
-<b>In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
+<b>If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
 
 <p></p>
 
@@ -13,7 +13,7 @@ Nativer SDK
 
 The aim of this readme is to describe how to integrate the App Localization Demo app with the Nativer SDK in order to try the localization capabilities of Nativer.
 
-In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
+If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
 <p></p>
 
@@ -230,6 +230,6 @@ Note: In order to try the translation feature you will also need the Nativer app
 
 
 
-<b>If you would like to explore the localization features of Nativer SDK and would like to try integrating the SDK, download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the detailed instructions in this readme.</b>
+<b>Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. If you would like to explore it download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the detailed instructions in this readme.</b>
 
-<b>In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
+<b>If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
