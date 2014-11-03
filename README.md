@@ -1,6 +1,10 @@
 Nativer SDK
 ===========
 
+<b>If you would like to explore the localization features of Nativer SDK and would like to try integrating the SDK, download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the below detailed instructions.</b>
+
+<b>In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
+
 <p></p>
 
 <h1>SDK integration</h1>
@@ -223,3 +227,9 @@ Note: In order to try the translation feature you will also need the Nativer app
 <p><b>Nativer SDK</b>: A set of functions and libraries, which enable the host Application to become easily translatable in the Nativer Ecosystem</p>
 
 <p><b>Nativer Application</b>: This is Transround&rsquo;s own application, called Nativer, which implements majority of the functionality of the Nativer Ecosystem, like requesting localizations, downloading ready localizations, translate, proof reading, support, etc.</p>
+
+
+
+<b>If you would like to explore the localization features of Nativer SDK and would like to try integrating the SDK, download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the detailed instructions in this readme.</b>
+
+<b>In case you would like to integrate your own app with the Nativer SDK please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
