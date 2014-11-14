@@ -68,8 +68,6 @@ Select **"Help/Install New Software..."** in Eclipse and click on
 
 <p><strong><em>1.</em></strong><em> Alternatively you can go to </em><a href="http://www.eclipse.org/ajdt/downloads/"><em>http://www.eclipse.org/ajdt/downloads/</em></a><em> to download the AJDT plugin as a zip file and use that as a normal update site.</em></p>
 
-<p><strong><em>2</em></strong><em>. Due to lack of official AspectJ version, the latest Kepler 4.3 release of Eclipse is actually not supported by Nativer. As soon as AspectJ for Kepler becomes available, it will be validated by us, and communicated via our website</em></p>
-
 <p></p>
 
 <h1>4.Converting your Android project to an AspectJ project</h1>
