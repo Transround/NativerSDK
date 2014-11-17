@@ -55,9 +55,10 @@ Select **"Help/Install New Software..."** in Eclipse and click on
 **Add...** The Repository Location depends on which version of Eclipse you use:</p>
 
 <ul>
-	<li>In case of Eclipse Helios: <a href="http://download.eclipse.org/tools/ajdt/36/update">http://download.eclipse.org/tools/ajdt/36/update</a></li>
-	<li>In case of Eclipse Indigo: <a href="http://download.eclipse.org/tools/ajdt/37/update">http://download.eclipse.org/tools/ajdt/37/update</a></li>
-	<li>In case of Eclipse Juno: <a href="http://download.eclipse.org/tools/ajdt/42/update">http://download.eclipse.org/tools/ajdt/42/update</a></li>
+	<li>In case of Eclipse Helios (3.6): <a href="http://download.eclipse.org/tools/ajdt/36/update">http://download.eclipse.org/tools/ajdt/36/update</a></li>
+	<li>In case of Eclipse Indigo (3.7): <a href="http://download.eclipse.org/tools/ajdt/37/update">http://download.eclipse.org/tools/ajdt/37/update</a></li>
+	<li>In case of Eclipse Juno (4.2): <a href="http://download.eclipse.org/tools/ajdt/42/update">http://download.eclipse.org/tools/ajdt/42/update</a></li>
+	<li>In case of Eclipse Kepler (4.3): <a href="http://download.eclipse.org/tools/ajdt/43/update">http://download.eclipse.org/tools/ajdt/43/update</a></li>
 </ul>
 
 <p>Select the newly created update site and check <strong><em>&bdquo;AspectJ Development Tools (Required)&rdquo;</em></strong> and &bdquo;<strong><em>Other AJDT Tools (Optional)&rdquo;</em></strong> then click on <strong><em>&bdquo;Next&rdquo;</em></strong> and follow the directions given by Eclipse.</p>
