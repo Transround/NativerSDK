@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:countrydemo="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_action_help"
+        android:title="@string/localization_demo_ic_action_help"
+        countrydemo:showAsAction="ifRoom" 
+        />
+</menu>

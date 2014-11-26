@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="localization_demo_transround_help_link">http://www.transround.com/demohelpuser</string>
+    <string name="localization_demo_transround_link">https://http://transround.com/</string>
+    
+    
+    <string name="localization_demo_app_name">App Localization Demo Dev</string>
+    <string name="localization_demo_ic_action_help">Help</string>
+    <string name="localization_demo_label_fruit">Fruit</string>
+    <string name="localization_demo_label_calories">Calories (kcal)</string>
+    <string name="localization_demo_label_protein">Protein (g)</string>
+    <string name="localization_demo_label_carbohydrate">Carbohydrate (g)</string>
+    <string name="localization_demo_label_fibre">Fibre (g)</string>
+    <string name="localization_demo_label_daily_value">Daily Value (%)</string>
+
+    <string-array name="localization_demo_fruit_array">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Pineapple</item>
+        <item>Lemon</item>
+        <item>Orange</item>
+        <item>Grapefruit</item>
+        <item>Pear</item>
+        <item>Grape</item>
+        <item>Raspberry</item>
+        <item>Water melon</item>
+        <item>Sour cherry</item>
+    </string-array>
+
+</resources>

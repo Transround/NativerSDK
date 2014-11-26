@@ -1,0 +1,102 @@
+{
+"fruits": [
+		{
+			"name": "apple",
+			"calories":  31,
+			"protein":  0.4,
+			"carbohydrate": 7.0,
+			"fibre":  1.3,
+			"dailyValue":  1.55
+		},
+
+		{
+			"name": "banana",
+			"calories":  105,
+			"protein":  1.3,
+			"carbohydrate": 24.2,
+			"fibre":  0.4,
+			"dailyValue":  5.25
+		},
+
+		{
+			"name": "pineapple",
+			"calories":  53,
+			"protein":  0.4,
+			"carbohydrate": 12.0,
+			"fibre":  0.4,
+			"dailyValue":  2.65
+		},
+
+		{
+			"name": "lemon",
+			"calories":  27,
+			"protein":  0.4,
+			"carbohydrate": 2.3,
+			"fibre":  2.2,
+			"dailyValue":  1.35
+		},
+
+		{
+			"name": "orange",
+			"calories":  41,
+			"protein":  0.6,
+			"carbohydrate": 8.5,
+			"fibre":  0.5,
+			"dailyValue":  2.05
+		},
+
+		{
+			"name": "grapefruit",
+			"calories":  36,
+			"protein":  0.5,
+			"carbohydrate": 7.2,
+			"fibre":  0.4,
+			"dailyValue":  1.8
+		},
+
+		{
+			"name": "pear",
+			"calories":  52,
+			"protein":  0.4,
+			"carbohydrate": 12.0,
+			"fibre":  2.6,
+			"dailyValue":  2.6
+		},
+
+		{
+			"name": "grape",
+			"calories":  78,
+			"protein":  0.6,
+			"carbohydrate": 18.1,
+			"fibre":  1.3,
+			"dailyValue":  3.9
+		},
+
+		{
+			"name": "raspberry",
+			"calories":  29,
+			"protein":  1.2,
+			"carbohydrate": 5.4,
+			"fibre":  5.6,
+			"dailyValue":  1.45
+		},
+
+		{
+			"name": "watermelon",
+			"calories":  52,
+			"protein":  0.5,
+			"carbohydrate": 6.5,
+			"fibre":  0.8,
+			"dailyValue":  1.45
+		},
+
+		{
+			"name": "sour_cherry",
+			"calories":  31,
+			"protein":  0.8,
+			"carbohydrate": 11.0,
+			"fibre":  0.3,
+			"dailyValue": 2.6
+		}
+	]
+}
