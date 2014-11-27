@@ -1,13 +1,70 @@
 Nativer SDK
 ===========
 
-<b>Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. If you would like to explore it download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the detailed instructions below.</b>
 
-<b>If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
+About
+-----
+
+Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. 
+
+If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
+
+
+Usage (Gradle)
+--------------
+
+Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Transround/aspectdroid) plugin to compile your android project with AspectJ's compiler.
+
+* Add aspectdroid plugin
+
+	Complete the **buildscript** section of your project's build file:
+	```groovy
+	buildscript {
+	    ext {	
+		aspectjVersion = '1.8.2'
+	    }
+	    repositories {
+		mavenCentral()
+		// repository for aspectdroid plugin
+	        maven {
+	            url "http://www.transround.com/repositories/public/"
+	        }
+		
+	    }
+	    dependencies {
+	        classpath 'com.android.tools.build:gradle:0.13.+'	
+	        classpath 'com.transround:aspectdroid:1.0.+'
+	    }
+	}
+	```
+
+	Apply the `aspectdroid` plugin:
+	```groovy
+	apply plugin: 'aspectdroid'
+	```
+
+* Add nativer-sdk library
+	
+	Use our maven repository:
+	```groovy
+	repositories {
+	    mavenCentral()
+	    maven {
+	     url "http://www.transround.com/repositories/public/"
+	    }
+	}
+	```
+
+	Add nativer-sdk dependency:
+	```groovy
+	dependencies {
+	   compile 'com.transround:nativer-sdk:1.0.+'    
+	}
+	```
 
 <p></p>
 
-<h1>SDK integration</h1>
+<h1>Usage (Eclipse)</h1>
 
 <p></p>
 
@@ -55,10 +112,9 @@ Select **"Help/Install New Software..."** in Eclipse and click on
 **Add...** The Repository Location depends on which version of Eclipse you use:</p>
 
 <ul>
-	<li>In case of Eclipse Helios (3.6): <a href="http://download.eclipse.org/tools/ajdt/36/update">http://download.eclipse.org/tools/ajdt/36/update</a></li>
-	<li>In case of Eclipse Indigo (3.7): <a href="http://download.eclipse.org/tools/ajdt/37/update">http://download.eclipse.org/tools/ajdt/37/update</a></li>
-	<li>In case of Eclipse Juno (4.2): <a href="http://download.eclipse.org/tools/ajdt/42/update">http://download.eclipse.org/tools/ajdt/42/update</a></li>
-	<li>In case of Eclipse Kepler (4.3): <a href="http://download.eclipse.org/tools/ajdt/43/update">http://download.eclipse.org/tools/ajdt/43/update</a></li>
+	<li>In case of Eclipse Helios: <a href="http://download.eclipse.org/tools/ajdt/36/update">http://download.eclipse.org/tools/ajdt/36/update</a></li>
+	<li>In case of Eclipse Indigo: <a href="http://download.eclipse.org/tools/ajdt/37/update">http://download.eclipse.org/tools/ajdt/37/update</a></li>
+	<li>In case of Eclipse Juno: <a href="http://download.eclipse.org/tools/ajdt/42/update">http://download.eclipse.org/tools/ajdt/42/update</a></li>
 </ul>
 
 <p>Select the newly created update site and check <strong><em>&bdquo;AspectJ Development Tools (Required)&rdquo;</em></strong> and &bdquo;<strong><em>Other AJDT Tools (Optional)&rdquo;</em></strong> then click on <strong><em>&bdquo;Next&rdquo;</em></strong> and follow the directions given by Eclipse.</p>
@@ -68,6 +124,8 @@ Select **"Help/Install New Software..."** in Eclipse and click on
 <p><strong><em>Notes:</em></strong></p>
 
 <p><strong><em>1.</em></strong><em> Alternatively you can go to </em><a href="http://www.eclipse.org/ajdt/downloads/"><em>http://www.eclipse.org/ajdt/downloads/</em></a><em> to download the AJDT plugin as a zip file and use that as a normal update site.</em></p>
+
+<p><strong><em>2</em></strong><em>. Due to lack of official AspectJ version, the latest Kepler 4.3 release of Eclipse is actually not supported by Nativer. As soon as AspectJ for Kepler becomes available, it will be validated by us, and communicated via our website</em></p>
 
 <p></p>
 
