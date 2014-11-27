@@ -284,9 +284,3 @@ Note: In order to try the translation feature you will also need the Nativer app
 <p><b>Nativer SDK</b>: A set of functions and libraries, which enable the host Application to become easily translatable in the Nativer Ecosystem</p>
 
 <p><b>Nativer Application</b>: This is Transround&rsquo;s own application, called Nativer, which implements majority of the functionality of the Nativer Ecosystem, like requesting localizations, downloading ready localizations, translate, proof reading, support, etc.</p>
-
-
-
-<b>Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. If you would like to explore it download the [App Localization Demo project] (https://github.com/Transround/LocalizationDemoDev) from Github and follow the detailed instructions in this readme.</b>
-
-<b>If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.</b>
