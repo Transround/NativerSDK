@@ -110,6 +110,7 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 	- Android v7 app compat library
 	- Google API (minimum API level 15)
 * How does it work
+
 	To make your life easier, Nativer SDK uses AspectJ to make the necessary changes in your code instead of you.
 	In order to compile code with aspects in Eclipse you need to install the *AspectJ Development Tools* plugin.
 	In order to tell Eclipse to use the AJDT features in your Android project you must convert it to an AspectJ project. 
