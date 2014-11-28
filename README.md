@@ -15,6 +15,8 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 Installation (common steps) - AndroidManifest.xml
 -------------------------------------
 
+Depending on the development environment or compiler you prefer to use there are some specific installation steps (described later in this readme), however independently of the IDE/compiler there are some common installation steps, too.
+
 Declare the Nativer SDK's service in the manifest file in your application:
 
 Copy the following text sequence, and paste it into the **AndroidManifest.xml** file of your project.
@@ -143,11 +145,14 @@ Import the NativerSDK project into your workspace.
 Please add Android Support Library v7 to the Android library dependency to  Nativer SDK project. (Right click on Nativer SDK project > Properties > Android > Add...)  
 Do the same procedure for your project.
 
-#### Add NativerSDK to your Project
-#### Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path.
-#### After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path.
-#### Declare the Nativer SDK's service in the manifest file in your application:
-#### Declare the Nativer SDK's service in the manifest file in your application. Please check *Installation (common steps)* above for further details.
+#### There are some further project configuration steps you have to carry out
+* Add NativerSDK to your Project
+* Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path
+* After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path
+* Declare the Nativer SDK's service in the manifest file in your application
+
+#### Declare the Nativer SDK's service in the manifest file in your application. 
+Please check *Installation (common steps)* above for further details.
 
 #### Protecting parts of your application from the Nativer SDK
 
