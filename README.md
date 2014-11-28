@@ -104,7 +104,6 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 
 ### Requirements
 
-
 - Eclipse with ADT bundle
 - AspectJ plugin
 - Android v7 app compat library
@@ -133,64 +132,37 @@ In order to tell Eclipse to use the AJDT features in your Android project you mu
 Setting up Nativer SDK requires just a little bit more effort than adding an ordinary Android library to your project.
 Check out Nativer SDK from Github (https://github.com/Transround/NativerSDK).
 
-*Import NativerSDK to Eclipse*
+#### Import NativerSDK to Eclipse
 
 Import the NativerSDK project into your workspace.
 - File/Import... and then choose "Existing Android Code Into Workspace". Please do not forget to check the "Copy project into workspace" option.
 - Please note that in case you checked out Nativer SDK into your workspace directly then you have to use File/Import... and then "General/Existing Projects into Workspace" 
 
-*Set Android Support Library v7 for the SDK and your project*
+#### Set Android Support Library v7 for the SDK and your project
 
 Please add Android Support Library v7 to the Android library dependency to  Nativer SDK project. (Right click on Nativer SDK project > Properties > Android > Add...)  
 Do the same procedure for your project.
 
-*Add NativerSDK to your Project*
+#### Add NativerSDK to your Project
+#### Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path.
+#### After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path.
+#### Declare the Nativer SDK's service in the manifest file in your application:
+#### Declare the Nativer SDK's service in the manifest file in your application. Please check *Installation (common steps)* above for further details.
 
-*Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path.*
-
-*After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path.*
-
-*Declare the Nativer SDK's service in the manifest file in your application:*
-
-Copy the following text sequence, and paste it into the AndroidManifest.xml file of your project.
-
-```xml
-<service android:name="com.transround.plugin.service.PluginInterfaceService" >
-    <intent-filter>
-        <action android:name="com.transround.tools.PING" />
-
-        <category android:name="com.transround.tools.TRANSLATOR" />
-    </intent-filter>
-</service>
-
-<activity android:name="com.transround.plugin.activity.RefreshScreen" />
-```
-
-Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
-
-Also make sure you do not paste the text inside another application or service, or any other declaration.
-
-Please also make sure you have the following text outside the section:
-
-```xml
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-```
-
-### Protecting parts of your application from the Nativer SDK
+#### Protecting parts of your application from the Nativer SDK
 
 If there are some parts of your application which you don't want to be translated for some reason then you can tell Nativer to avoid them.
 
 You can use the ``` @DontTouchThis ``` annotation to tell the SDK which part of your code should be left intact. You can use this annotation on a whole class or on a method. 
 
-### Build and test your app project.
+#### Build and test your app project.
 
 It should now support all Nativer capabilities.
 
 Install the app to a test device (or emulator) and start it.
 The app will display an intro page that will help you to try Nativer localization features.
 
-Note: In order to try the translation feature you will also need the Nativer app. The demo app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
+Note: In order to try the translation feature you will also need the Nativer app. The compiled app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
 
 
 Glossary
