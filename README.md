@@ -7,11 +7,14 @@ About
 
 Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. 
 
+Please note that you only have to change the following configuration files in order integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
+
+
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
 Installation (General) - manifest.xml
---------------------
+-------------------------------------
 
 Declare the Nativer SDK's service in the manifest file in your application:
 
@@ -43,6 +46,7 @@ Installation (Gradle)
 ---------------------
 
 Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Transround/aspectdroid) plugin to compile your android project with AspectJ's compiler.
+If you would like to learn more about why AspectJ is used please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 
 * Add aspectdroid plugin
 
