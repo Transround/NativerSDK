@@ -7,7 +7,8 @@ About
 
 Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. 
 
-If you would ilke to integrate Nativer SDK into your app please visit the [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
+For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
+Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
 
 Usage (Gradle)
@@ -62,11 +63,8 @@ Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Tra
 	}
 	```
 
-<p></p>
-
-<h1>Usage (Eclipse)</h1>
-
-<p></p>
+Usage (Eclipse)
+---------------
 
 The aim of this readme is to describe how to integrate the App Localization Demo app with the Nativer SDK in order to try the localization capabilities of Nativer.
 
