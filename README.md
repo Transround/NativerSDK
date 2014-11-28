@@ -10,9 +10,38 @@ Nativer SDK adds dynamic resource management functionality to any Android app so
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
+Installation (General) - manifest.xml
+--------------------
 
-Usage (Gradle)
---------------
+	Declare the Nativer SDK's service in the manifest file in your application:
+	
+	Copy the following text sequence, and paste it into the AndroidManifest.xml file of your project.
+	
+	```xml
+	<service android:name="com.transround.plugin.service.PluginInterfaceService" >
+	    <intent-filter>
+	        <action android:name="com.transround.tools.PING" />
+	
+	        <category android:name="com.transround.tools.TRANSLATOR" />
+	    </intent-filter>
+	</service>
+	
+	<activity android:name="com.transround.plugin.activity.RefreshScreen" />
+	```
+	
+	Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
+	
+	Also make sure you do not paste the text inside another application or service, or any other declaration.
+	
+	Please also make sure you have the following text outside the section:
+	
+	```xml
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	```
+
+Installation (Gradle)
+---------------------
 
 Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Transround/aspectdroid) plugin to compile your android project with AspectJ's compiler.
 
@@ -62,12 +91,12 @@ Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Tra
 	   compile 'com.transround:nativer-sdk:1.0.+'    
 	}
 	```
-Usage (Maven)
---------------
+Installation (Maven)
+--------------------
 In preparation, will be available soon.
 
-Usage (Eclipse)
----------------
+Installation (Eclipse)
+----------------------
 
 A brief overview of how to integrate the Nativer SDK into your app using the Eclipse development environment.
 
