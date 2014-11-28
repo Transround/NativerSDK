@@ -9,11 +9,10 @@ Nativer SDK adds dynamic resource management functionality to any Android app so
 
 Please note that you only have to change the following configuration files in order integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
 
-
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
-Installation (General) - AndroidManifest.xml
+Installation (comment steps) - AndroidManifest.xml
 -------------------------------------
 
 Declare the Nativer SDK's service in the manifest file in your application:
@@ -42,7 +41,7 @@ Please also make sure you have the following text outside the section:
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
-Installation (Gradle)
+Installation (using Gradle)
 ---------------------
 
 Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Transround/aspectdroid) plugin to compile your android project with AspectJ's compiler.
@@ -94,14 +93,11 @@ If you would like to learn more about why AspectJ is used please check our wiki 
 	   compile 'com.transround:nativer-sdk:1.0.+'    
 	}
 	```
-Installation (Maven)
---------------------
-In preparation, will be available soon.
 
-Installation (Eclipse)
+Installation (using Eclipse)
 ----------------------
 
-A brief overview of how to integrate the Nativer SDK into your app using the Eclipse development environment.
+The following is a brief overview of how to integrate the Nativer SDK into your app using the Eclipse development environment.
 
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
@@ -114,25 +110,25 @@ Requirements
 - Android v7 app compat library
 - Google API (minimum API level 15)
 
-1.How does it work
+1. How does it work
 
 To make your life easier, Nativer SDK uses AspectJ to make the necessary changes in your code instead of you.
-
 In order to compile code with aspects in Eclipse you need to install the *AspectJ Development Tools* plugin.
 
-2.General work considerations
+2. General work considerations
 
 Check the build target of ALL projects and make sure that you are building with Google APIs, and for at least API level 15.
 Make sure that a Java JDK of version 6 is installed.
 
-3.Installing AspectJ
+3. Installing AspectJ
 
 The AspectJ Development Tools is a standard Eclipse plugin which can be downloaded and installed by Eclipse the same way you installed the Android Development Tools.
 
-4.Converting your Android project to an AspectJ project
+4. Converting your Android project to an AspectJ project
 
 In order to tell Eclipse to use the AJDT features in your Android project you must convert it to an AspectJ project. 
-5.Setting up Nativer SDK in your project
+
+5. Setting up Nativer SDK in your project
 
 Setting up Nativer SDK requires just a little bit more effort than adding an ordinary Android library to your project.
 
@@ -182,7 +178,7 @@ Please also make sure you have the following text outside the section:
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
-6.Protecting parts of your application from the Nativer SDK
+6. Protecting parts of your application from the Nativer SDK
 
 If there are some parts of your application which you don't want to be translated for some reason then you can tell Nativer to avoid them.
 
