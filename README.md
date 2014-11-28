@@ -12,7 +12,7 @@ Please note that you only have to change the following configuration files in or
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
-Installation (comment steps) - AndroidManifest.xml
+Installation (common steps) - AndroidManifest.xml
 -------------------------------------
 
 Declare the Nativer SDK's service in the manifest file in your application:
