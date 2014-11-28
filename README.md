@@ -13,32 +13,31 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 Installation (General) - manifest.xml
 --------------------
 
-	Declare the Nativer SDK's service in the manifest file in your application:
-	
-	Copy the following text sequence, and paste it into the AndroidManifest.xml file of your project.
-	
-	```xml
-	<service android:name="com.transround.plugin.service.PluginInterfaceService" >
-	    <intent-filter>
-	        <action android:name="com.transround.tools.PING" />
-	
-	        <category android:name="com.transround.tools.TRANSLATOR" />
-	    </intent-filter>
-	</service>
-	
-	<activity android:name="com.transround.plugin.activity.RefreshScreen" />
-	```
-	
-	Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
-	
-	Also make sure you do not paste the text inside another application or service, or any other declaration.
-	
-	Please also make sure you have the following text outside the section:
-	
-	```xml
-	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	```
+Declare the Nativer SDK's service in the manifest file in your application:
+
+Copy the following text sequence, and paste it into the AndroidManifest.xml file of your project.
+
+```xml
+<service android:name="com.transround.plugin.service.PluginInterfaceService" >
+    <intent-filter>
+        <action android:name="com.transround.tools.PING" />
+
+        <category android:name="com.transround.tools.TRANSLATOR" />
+    </intent-filter>
+</service>
+
+<activity android:name="com.transround.plugin.activity.RefreshScreen" />
+```
+
+Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
+
+Also make sure you do not paste the text inside another application or service, or any other declaration.
+
+Please also make sure you have the following text outside the section:
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
 
 Installation (Gradle)
 ---------------------
