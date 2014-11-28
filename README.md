@@ -102,39 +102,38 @@ The following is a brief overview of how to integrate the Nativer SDK into your 
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
-Requirements
-------------
+### Requirements
+
 
 - Eclipse with ADT bundle
 - AspectJ plugin
 - Android v7 app compat library
 - Google API (minimum API level 15)
 
-1. How does it work
+### How does it work
 
 To make your life easier, Nativer SDK uses AspectJ to make the necessary changes in your code instead of you.
 In order to compile code with aspects in Eclipse you need to install the *AspectJ Development Tools* plugin.
 
-2. General work considerations
+### General work considerations
 
 Check the build target of ALL projects and make sure that you are building with Google APIs, and for at least API level 15.
 Make sure that a Java JDK of version 6 is installed.
 
-3. Installing AspectJ
+### Installing AspectJ
 
 The AspectJ Development Tools is a standard Eclipse plugin which can be downloaded and installed by Eclipse the same way you installed the Android Development Tools.
 
-4. Converting your Android project to an AspectJ project
+### Converting your Android project to an AspectJ project
 
 In order to tell Eclipse to use the AJDT features in your Android project you must convert it to an AspectJ project. 
 
-5. Setting up Nativer SDK in your project
+### Setting up Nativer SDK in your project
 
 Setting up Nativer SDK requires just a little bit more effort than adding an ordinary Android library to your project.
-
 Check out Nativer SDK from Github (https://github.com/Transround/NativerSDK).
 
-**Import NativerSDK to Eclipse**
+*Import NativerSDK to Eclipse*
 
 Import the NativerSDK project into your workspace.
 - File/Import... and then choose "Existing Android Code Into Workspace". Please do not forget to check the "Copy project into workspace" option.
@@ -178,13 +177,13 @@ Please also make sure you have the following text outside the section:
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
-6. Protecting parts of your application from the Nativer SDK
+### Protecting parts of your application from the Nativer SDK
 
 If there are some parts of your application which you don't want to be translated for some reason then you can tell Nativer to avoid them.
 
 You can use the ``` @DontTouchThis ``` annotation to tell the SDK which part of your code should be left intact. You can use this annotation on a whole class or on a method. 
 
-7. Build and test your app project.
+### Build and test your app project.
 
 It should now support all Nativer capabilities.
 
