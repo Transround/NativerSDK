@@ -1,7 +1,6 @@
 Nativer SDK
 ===========
 
-
 About
 -----
 
@@ -11,6 +10,9 @@ Please note that you only have to change the following configuration files in or
 
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
+
+Getting started
+===============
 
 Installation
 ------------
@@ -36,8 +38,6 @@ Copy the following text sequence, and paste it into the **AndroidManifest.xml** 
 ```
 
 Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
-
-Also make sure you do not paste the text inside another application or service, or any other declaration.
 
 Please also make sure you have the following text outside the section:
 ```xml
