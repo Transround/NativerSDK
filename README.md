@@ -129,7 +129,7 @@ Note: In order to try the translation feature you will also need the Nativer app
 
 Sample project
 --------------
-You can check how easy to build in the SDK and try the main features of the SDK using our sample App Localization project (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample).
+You can check how easy to build in the SDK and try the main features of the SDK using our sample [App Localization project] (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample).
 
 Glossary
 --------
