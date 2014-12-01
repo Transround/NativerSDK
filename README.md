@@ -113,16 +113,15 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 
 	To make your life easier, Nativer SDK uses AspectJ to make the necessary changes in your code instead of you.
 	In order to compile code with aspects in Eclipse you need to install the *AspectJ Development Tools* plugin.
-	In order to tell Eclipse to use the AJDT features in your Android project you must convert it to an AspectJ project.
-	For more details please check our related [wiki page](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK#3installing-aspectj).
+	In order to tell Eclipse to use the AJDT features in your Android project you must convert it to an AspectJ project. 	For more details please check our related [wiki page](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK#3installing-aspectj).
 * Setting up Nativer SDK in your project
 
 	- Set Android Support Library v7 for the SDK and your project
 	- Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path
 	- After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path
 	- Declare the Nativer SDK's service in the manifest file in your application
+	- Declare the Nativer SDK's service in the manifest file in your application. 
 
-* Declare the Nativer SDK's service in the manifest file in your application. 
 * In order to utilize the Nativer localization service you should go through a simple registration process at our [Developer Self Service Site] (http://nativer01.nativer.com/prod/admin/index.php?route=common/information&information_id=28&menu=devinfo). The main steps of the process are as follows:
     * Register your app in our database
     * Upload the resource files of your app and define the scope of translation
