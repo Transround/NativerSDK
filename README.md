@@ -41,7 +41,7 @@ Copy the following text sequence, and paste it into the **AndroidManifest.xml** 
 	    </intent-filter>
 	</service>
 	...
-	<activity android:name="com.transround.plugin.activity.RefreshScreen" />
+	<activity android:name="com.transround.plugin.activity.RefreshScreen" android:exported="true"/>
 	...
 </application>
 ```
