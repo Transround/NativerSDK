@@ -31,6 +31,8 @@ Copy the following text sequence, and paste it into the **AndroidManifest.xml** 
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ...
 <application
+	<!-->Add the following lines to the application section<-->
+	...
 	<service android:name="com.transround.plugin.service.PluginInterfaceService" >
 	    <intent-filter>
 	        <action android:name="com.transround.tools.PING" />
@@ -38,8 +40,9 @@ Copy the following text sequence, and paste it into the **AndroidManifest.xml** 
 	        <category android:name="com.transround.tools.TRANSLATOR" />
 	    </intent-filter>
 	</service>
-
+	...
 	<activity android:name="com.transround.plugin.activity.RefreshScreen" />
+	...
 </application>
 ```
 
