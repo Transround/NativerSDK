@@ -120,7 +120,6 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 	- Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path
 	- After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path
 	- Declare the Nativer SDK's service in the manifest file in your application
-	- Declare the Nativer SDK's service in the manifest file in your application. 
 
 * In order to utilize the Nativer localization service you should go through a simple registration process at our [Developer Self Service Site] (http://nativer01.nativer.com/prod/admin/index.php?route=common/information&information_id=28&menu=devinfo). The main steps of the process are as follows:
     * Register your app in our database
