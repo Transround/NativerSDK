@@ -26,23 +26,21 @@ Declare the Nativer SDK's service in the manifest file in your application:
 Copy the following text sequence, and paste it into the **AndroidManifest.xml** file of your project.
 
 ```xml
-<service android:name="com.transround.plugin.service.PluginInterfaceService" >
-    <intent-filter>
-        <action android:name="com.transround.tools.PING" />
-
-        <category android:name="com.transround.tools.TRANSLATOR" />
-    </intent-filter>
-</service>
-
-<activity android:name="com.transround.plugin.activity.RefreshScreen" />
-```
-
-Please be careful, and make sure the above text is copied into your manifest file before the ``` </application>``` closing tag declaration.
-
-Please also make sure you have the following text outside the section:
-```xml
+...
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+...
+<application
+	<service android:name="com.transround.plugin.service.PluginInterfaceService" >
+	    <intent-filter>
+	        <action android:name="com.transround.tools.PING" />
+	
+	        <category android:name="com.transround.tools.TRANSLATOR" />
+	    </intent-filter>
+	</service>
+
+	<activity android:name="com.transround.plugin.activity.RefreshScreen" />
+</application>
 ```
 
 #### Installation (using Gradle)
