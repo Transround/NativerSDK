@@ -21,7 +21,10 @@ You can simply compile and start the demo app.
 
 Compilation instructions (Eclipse)
 -----------------------------------------
-You have to import the downloaded source code into Android Studio, this will import two projects
+If you do not have AspectJ installed then first you have to install it please follow the instuctions on
+For details regarding AspectJ installation please check the following [wiki page](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK#3installing-aspectj);
+
+If you have AspectJ then you have to import the downloaded source code into Eclipse, this will import two projects
 * nativer-sdk: for the library
 * nativer-sdk-sample: for the demo app
 
