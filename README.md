@@ -101,8 +101,6 @@ If you would like to learn more about why AspectJ is used please check our wiki 
 
 #### Installation using Eclipse
 
-The following is a brief overview of how to integrate the Nativer SDK into your app using the Eclipse development environment.
-
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
@@ -137,10 +135,10 @@ You can check how easy to build in the SDK and try the main features of the SDK 
 Glossary
 --------
 
-*Host Application*: Is the original Application of a developer. The App Localization Demo (https://github.com/Transround/LocalizationDemoDev) is an example of a host application. By adding the Nativer SDK to it, becomes NLE (Nativer Localization Enabled) Application
+*Host Application*: Is the original Application of a developer. The App Localization Demo (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample) is an example of a host application. By adding the Nativer SDK to it, becomes NLE (Nativer Localization Enabled) Application.
 
 *NLE Application*: Stands for Nativer Localization Enabled Application. This is an original Application of a developer, in which the Nativer SDK has been embedded.
 
-*Nativer SDK*: A set of functions and libraries, which enable the host Application to become easily translatable in the Nativer Ecosystem
+*Nativer SDK*: A set of functions and libraries, which enable the host Application to become easily translatable in the Nativer Ecosystem.
 
 *Nativer Application*: This is Transround&rsquo;s own application, called Nativer, which implements majority of the functionality of the Nativer Ecosystem, like requesting localizations, downloading ready localizations, translate, proof reading, support, etc.
