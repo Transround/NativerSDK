@@ -65,24 +65,26 @@ Then visit our <a href="http://developer.nativer.com/">Nativer Developer Self Se
 
 <p>Copy the following text sequence, and paste it into the <strong>AndroidManifest.xml</strong> file of your project.</p>
 
-<pre lang="xml`"><code>`...`
-`&lt;uses-permission android:name="android.permission.INTERNET" /&gt;`
-`&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;`
-`...`
-`&lt;application`
-    `&lt;!-- Add the following lines to the application section --&gt;`
-    `...`
-    `&lt;service android:name="com.transround.plugin.service.PluginInterfaceService" &gt;`
-        `&lt;intent-filter&gt;`
-            `&lt;action android:name="com.transround.tools.PING" /&gt;`
+<pre><code>```xml
+...
+&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+...
+&lt;application
+    &lt;!-- Add the following lines to the application section --&gt;
+    ...
+    &lt;service android:name="com.transround.plugin.service.PluginInterfaceService" &gt;
+        &lt;intent-filter&gt;
+            &lt;action android:name="com.transround.tools.PING" /&gt;
 
-            `&lt;category android:name="com.transround.tools.TRANSLATOR" /&gt;`
-        `&lt;/intent-filter&gt;`
-    `&lt;/service&gt;`
-    `...`
-    `&lt;activity android:name="com.transround.plugin.activity.RefreshScreen" android:exported="true"/&gt;`
-    `...`
-`&lt;/application&gt;`
+            &lt;category android:name="com.transround.tools.TRANSLATOR" /&gt;
+        &lt;/intent-filter&gt;
+    &lt;/service&gt;
+    ...
+    &lt;activity android:name="com.transround.plugin.activity.RefreshScreen" android:exported="true"/&gt;
+    ...
+&lt;/application&gt;
+```
 </code></pre>
 
 <p>You should go through a <a href="https://github.com/Transround/NativerSDK/blob/master/README.md#android-app-localization---common-steps">simple registration process</a> after completing installation steps for your development environment in order to utilize multilingual Adnroid app localization service.</p>
