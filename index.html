@@ -34,8 +34,9 @@
         <h1>
 <a id="app-localization-for-android---nativer-sdk" class="anchor" href="#app-localization-for-android---nativer-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>App localization for Android - Nativer SDK</h1>
 
-<p><img src="http://nativer01.nativer.com/prod/transround_backend/demo/demo_role_selector_hd_1.png" alt="Android App Localization SDK">
-App localization SDK and community app localization service for multilingual Android apps. 
+<p><img src="http://nativer01.nativer.com/prod/transround_backend/demo/demo_role_selector_hd_1.png" alt="Android App Localization SDK"></p>
+
+<p>App localization SDK and community app localization service for multilingual Android apps. 
 Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service:</p>
 
 <ul>
@@ -64,24 +65,25 @@ Then visit our <a href="http://developer.nativer.com/">Nativer Developer Self Se
 
 <p>Copy the following text sequence, and paste it into the <strong>AndroidManifest.xml</strong> file of your project.</p>
 
-<div class="highlight highlight-xml"><pre>...
-&lt;<span class="pl-ent">uses-permission</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>android.permission.INTERNET<span class="pl-pds">"</span></span> /&gt;
-&lt;<span class="pl-ent">uses-permission</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>android.permission.WRITE_EXTERNAL_STORAGE<span class="pl-pds">"</span></span> /&gt;
-...
-&lt;<span class="pl-ent">application</span>
-    &lt;!-- Add the following lines to the application section --&gt;
-    ...
-    &lt;<span class="pl-ent">service</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>com.transround.plugin.service.PluginInterfaceService<span class="pl-pds">"</span></span> &gt;
-        &lt;<span class="pl-ent">intent-filter</span>&gt;
-            &lt;<span class="pl-ent">action</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>com.transround.tools.PING<span class="pl-pds">"</span></span> /&gt;
+<pre lang="xml`"><code>`...`
+`&lt;uses-permission android:name="android.permission.INTERNET" /&gt;`
+`&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;`
+`...`
+`&lt;application`
+    `&lt;!-- Add the following lines to the application section --&gt;`
+    `...`
+    `&lt;service android:name="com.transround.plugin.service.PluginInterfaceService" &gt;`
+        `&lt;intent-filter&gt;`
+            `&lt;action android:name="com.transround.tools.PING" /&gt;`
 
-            &lt;<span class="pl-ent">category</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>com.transround.tools.TRANSLATOR<span class="pl-pds">"</span></span> /&gt;
-        &lt;/<span class="pl-ent">intent-filter</span>&gt;
-    &lt;/<span class="pl-ent">service</span>&gt;
-    ...
-    &lt;<span class="pl-ent">activity</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>com.transround.plugin.activity.RefreshScreen<span class="pl-pds">"</span></span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">exported</span>=<span class="pl-s1"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>/&gt;
-    ...
-&lt;/<span class="pl-ent">application</span>&gt;</pre></div>
+            `&lt;category android:name="com.transround.tools.TRANSLATOR" /&gt;`
+        `&lt;/intent-filter&gt;`
+    `&lt;/service&gt;`
+    `...`
+    `&lt;activity android:name="com.transround.plugin.activity.RefreshScreen" android:exported="true"/&gt;`
+    `...`
+`&lt;/application&gt;`
+</code></pre>
 
 <p>You should go through a <a href="https://github.com/Transround/NativerSDK/blob/master/README.md#android-app-localization---common-steps">simple registration process</a> after completing installation steps for your development environment in order to utilize multilingual Adnroid app localization service.</p>
 
