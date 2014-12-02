@@ -6,7 +6,7 @@ Nativer SDK adds dynamic resource management functionality to any Android app so
 - Translating apps into any language using smartphones with immediate preview
 - Distributing language resources on-the-fly to end users
 
-App localization SDK integration under 20 minutes
+App localization SDK integration within 20 minutes
 --------------------------------------------------
 You only have to change the following configuration files in order to integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
 
