@@ -1,10 +1,10 @@
-Nativer SDK
-===========
+App localization for Android - Nativer SDK
+==========================================
 
-About
------
-
-Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service. 
+App localization SDK and community app localization service for multilingual Android apps. 
+Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service:
+- Translating apps into any language using smartphones with immediate preview
+- Distributing language resources on-the-fly to end users
 
 Please note that you only have to change the following configuration files in order integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
 
@@ -17,7 +17,7 @@ Getting started
 Installation
 ------------
 
-#### Common steps
+#### Common steps for Android Studio|Gradle and Eclipse
 
 Depending on the development environment or compiler you prefer to use there are some specific installation steps (described later in this readme), however independently of the IDE/compiler there are some common installation steps, too.
 
@@ -45,8 +45,9 @@ Copy the following text sequence, and paste it into the **AndroidManifest.xml** 
 	...
 </application>
 ```
+You should go through a simple registration process after completing installation steps for your development environment in order to utilize multilingual Adnroid app localization service.
 
-#### Installation (using Gradle)
+#### Installation using Android Studio|Gradle
 
 Nativer-sdk uses Aspectj so you have to use [Aspectdroid](https://github.com/Transround/aspectdroid) plugin to compile your android project with AspectJ's compiler.
 If you would like to learn more about why AspectJ is used please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
@@ -98,7 +99,7 @@ If you would like to learn more about why AspectJ is used please check our wiki 
 	}
 	```
 
-#### Installation (using Eclipse)
+#### Installation using Eclipse
 
 The following is a brief overview of how to integrate the Nativer SDK into your app using the Eclipse development environment.
 
@@ -120,15 +121,16 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 	- Add NativerSDK project and the nativersdkplugin.jar to your Aspect Path
 	- After adding the SDK and the jar to the AspectJ's build path also add them to the Java Build Path
 	- Declare the Nativer SDK's service in the manifest file in your application
-
+Android app localization - common steps
+----------------------------------------
 * In order to utilize the Nativer localization service you should go through a simple registration process at our [Developer Self Service Site] (http://nativer01.nativer.com/prod/admin/index.php?route=common/information&information_id=28&menu=devinfo). The main steps of the process are as follows:
     * Register your app in our database
     * Upload the resource files of your app and define the scope of translation
 
 Note: In order to try the translation feature you will also need the Nativer app. The compiled app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
 
-Sample project
---------------
+Sample Multilanguage Android app project
+----------------------------------------
 You can check how easy to build in the SDK and try the main features of the SDK using our sample [App Localization project] (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample).
 
 Glossary
