@@ -21,8 +21,6 @@ Installation
 
 #### Common steps for Android Studio|Gradle and Eclipse
 
-Depending on the development environment or compiler you prefer to use there are some specific installation steps (described later in this readme), however independently of the IDE/compiler there are some common installation steps, too.
-
 Declare the Nativer SDK's service in the manifest file in your application:
 
 Copy the following text sequence, and paste it into the **AndroidManifest.xml** file of your project.
