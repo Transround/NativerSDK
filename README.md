@@ -6,7 +6,7 @@ Nativer SDK adds dynamic resource management functionality to any Android app so
 - Translating apps into any language using smartphones with immediate preview
 - Distributing language resources on-the-fly to end users
 
-Please note that you only have to change the following configuration files in order integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
+Please note that you only have to change the following configuration files in order to integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
 
 For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
