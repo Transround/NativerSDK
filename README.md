@@ -45,7 +45,7 @@ Copy the following text sequence, and paste it into the **AndroidManifest.xml** 
 	...
 </application>
 ```
-You should go through a simple registration process after completing installation steps for your development environment in order to utilize multilingual Adnroid app localization service.
+You should go through a [simple registration process] (https://github.com/Transround/NativerSDK/blob/master/README.md#android-app-localization---common-steps) after completing installation steps for your development environment in order to utilize multilingual Adnroid app localization service.
 
 #### Installation using Android Studio|Gradle
 
