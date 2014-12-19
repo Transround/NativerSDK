@@ -13,6 +13,7 @@ import java.awt.*;
 public class HelpForm extends JPanel {
     private JPanel contentPane;
     private JEditorPane editorPane;
+    private JButton closeButton;
     private NativerAdmin application;
 
     public HelpForm(final NativerAdmin application) {
@@ -43,5 +44,10 @@ public class HelpForm extends JPanel {
             }
         };
         getHelpTextTask.run();
+    }
+
+
+    public JButton getCloseButton() {
+        return closeButton;
     }
 }

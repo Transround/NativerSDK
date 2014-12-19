@@ -1,6 +1,13 @@
 package com.transround.nativeradmin.util;
 
+import com.intellij.history.LocalHistory;
+import com.intellij.openapi.compiler.CompileContext;
+import com.intellij.openapi.compiler.CompileStatusNotification;
+import com.intellij.openapi.compiler.CompilerBundle;
+import com.intellij.openapi.compiler.CompilerManager;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.projectRoots.Sdk;
+import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.xml.actions.xmlbeans.FileUtils;
 
 import java.io.File;
@@ -70,5 +77,15 @@ public class CommonUtils {
     protected static void backupFile(File file) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd_HHmmss");
         FileUtils.copyFile(file, new File(String.format("%1$s.%2$s.bak", file.getAbsolutePath(), simpleDateFormat.format(new Date()))));
+    }
+
+    public static void rebuildProject() {
+        CompilerManager.getInstance(project).rebuild(new CompileStatusNotification() {
+            public void finished(boolean aborted, int errors, int warnings, final CompileContext compileContext) {
+                if (aborted || project.isDisposed()) {
+                    return;
+                }
+            }
+        });
     }
 }

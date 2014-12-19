@@ -1,11 +1,14 @@
 package com.transround.nativeradmin.ui;
 
+import com.intellij.openapi.projectRoots.Sdk;
+import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.openapi.ui.Messages;
 import com.transround.nativeradmin.OpenUI;
 import com.transround.nativeradmin.model.Eula;
 import com.transround.nativeradmin.network.JSONService;
 import com.transround.nativeradmin.swing.AsyncTask;
 import com.transround.nativeradmin.swing.ImagePanel;
+import com.transround.nativeradmin.util.CommonUtils;
 import com.transround.nativeradmin.util.Constants;
 
 import javax.swing.*;
@@ -69,6 +72,7 @@ public class NativerAdmin extends JDialog {
             protected void onSuccess(Eula result) {
                 textPane.setContentType("text/html");
                 textPane.setText(result.getText());
+                textPane.setCaretPosition(0);
                 leftPanel.updateUI();
             }
 
@@ -122,9 +126,17 @@ public class NativerAdmin extends JDialog {
     }
 
     public void applicationRegistered() {
+        CommonUtils.rebuildProject();
         rootPanel.removeAll();
         rootPanel.setLayout(new BorderLayout());
-        helpForm.setPreferredSize(new Dimension(870, 360));
+        //helpForm.setPreferredSize(new Dimension(870, 360));
+        helpForm.getCloseButton().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
+
         rootPanel.add(helpForm, BorderLayout.WEST);
         rootPanel.updateUI();
     }

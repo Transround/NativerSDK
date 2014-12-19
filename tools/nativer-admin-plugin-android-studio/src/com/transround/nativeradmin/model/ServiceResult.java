@@ -6,6 +6,7 @@ package com.transround.nativeradmin.model;
 public class ServiceResult {
     private String result;
     private String errorMessage;
+    private JsonErrorResponse jsonErrorResponse;
 
     public String getResult() {
         return result;
@@ -25,5 +26,13 @@ public class ServiceResult {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+    }
+
+    public JsonErrorResponse getJsonErrorResponse() {
+        return jsonErrorResponse;
+    }
+
+    public void setJsonErrorResponse(JsonErrorResponse jsonErrorResponse) {
+        this.jsonErrorResponse = jsonErrorResponse;
     }
 }

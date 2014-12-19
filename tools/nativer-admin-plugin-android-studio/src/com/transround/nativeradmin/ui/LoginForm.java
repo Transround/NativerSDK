@@ -1,11 +1,15 @@
 package com.transround.nativeradmin.ui;
 
+import com.intellij.ide.passwordSafe.PasswordSafe;
+import com.intellij.ide.passwordSafe.PasswordSafeException;
 import com.intellij.openapi.ui.Messages;
 import com.transround.nativeradmin.model.LoginResponse;
 import com.transround.nativeradmin.network.JSONService;
 import com.transround.nativeradmin.swing.AsyncTask;
+import com.transround.nativeradmin.util.CommonUtils;
 import com.transround.nativeradmin.util.Constants;
 import com.transround.nativeradmin.util.Session;
+import org.jdesktop.swingx.auth.UserNameStore;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,12 +21,16 @@ import java.awt.event.KeyEvent;
  * Created by szeibert on 2014.11.27..
  */
 public class LoginForm extends JPanel {
+    private static final String sUserName = "USER_NAME";
+    private static final String sPassword = "PASSWORD";
+
     private JButton loginButton;
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JButton registerButton;
     private JPanel contentPane;
     private NativerAdmin application;
+    //private PasswordSafe passwordSafe;
 
     public LoginForm(final NativerAdmin application) {
         this.application = application;
@@ -37,7 +45,46 @@ public class LoginForm extends JPanel {
                 login();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
+        //passwordSafe = PasswordSafe.getInstance();
+
+        //usernameField.setText(getUserName());
+        //passwordField.setText(getPassword());
     }
+
+/*    private String getUserName(){
+        return getValueFromPasswordSafe(sUserName);
+    }
+
+    private void setUserName(String userName){
+        setValueInPasswordSafe(sUserName, userName);
+    }
+
+    private String getPassword(){
+        return getValueFromPasswordSafe(sPassword);
+    }
+
+    private void setPassword(String password){
+        setValueInPasswordSafe(sPassword, password);
+    }
+
+    private String getValueFromPasswordSafe(String key){
+        try {
+            return passwordSafe.getPassword(CommonUtils.getProject(), LoginForm.this.getClass(), key);
+        } catch (PasswordSafeException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+    private void setValueInPasswordSafe(String key, String value){
+        try {
+            passwordSafe.storePassword(CommonUtils.getProject(), LoginForm.this.getClass(), key, value);
+        } catch (PasswordSafeException e) {
+            e.printStackTrace();
+        }
+    }*/
+
 
     public void loginUserInSession() {
         usernameField.setText(Session.getInstance().getUser().getUsername());
@@ -62,6 +109,9 @@ public class LoginForm extends JPanel {
             @Override
             protected void onSuccess(LoginResponse result) {
                 if (result.isSuccess()) {
+                    //setUserName(usernameField.getText());
+                    //setPassword(passwordField.getText());
+
                     Session.getInstance().setToken(result.getToken());
                     Session.getInstance().setSessid(result.getSessid());
                     application.userLoggedIn();

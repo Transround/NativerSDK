@@ -11,8 +11,10 @@ import com.transround.nativeradmin.swing.FileListModel;
 import com.transround.nativeradmin.util.AndroidXMLUtils;
 import com.transround.nativeradmin.util.Constants;
 import com.transround.nativeradmin.util.GradleUtils;
+import com.transround.nativeradmin.util.ProGuardUtils;
 
 import javax.swing.*;
+import javax.xml.ws.Service;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -83,7 +85,7 @@ public class UploadApplicationForm extends JPanel {
         updateProjectFilesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                updateProjectFiles();
+                updateProject();
             }
         });
 
@@ -93,27 +95,49 @@ public class UploadApplicationForm extends JPanel {
         defaultLanguageComboBox.setSelectedIndex(Language.getByCode("en").ordinal());
     }
 
+    private TrApplication getTrApplication() {
+        TrApplication trApplication = new TrApplication();
+        trApplication.setTrJavaPackage(packageField.getText());
+        CategoryDescription cd = new CategoryDescription();
+        cd.setName(applicationNameField.getText());
+        java.util.List<CategoryDescription> cdList = new ArrayList<CategoryDescription>();
+        cdList.add(cd);
+        trApplication.setCategoryDescription(cdList);
+        return trApplication;
+    }
+
+    private synchronized ServiceResult postInsertTrApplication() throws IOException {
+        JSONService<ServiceResult> insertApplicationService = new JSONService<ServiceResult>(){};
+        return insertApplicationService.post(Constants.accountServiceUrl + "insertApplication", getTrApplication());
+    }
+
+    private synchronized ServiceResult uploadResourceFiles() throws IOException {
+        JSONService<ServiceResult> uploadFilesService = new JSONService<ServiceResult>(){};
+
+        return uploadFilesService.upload(Constants.uploadUrl, resourceFilesListModel.getFiles());
+    }
+
+    private synchronized ServiceResult processUploadedResourceFiles() throws IOException {
+        JSONService<ServiceResult> processUploadedResourcesService = new JSONService<ServiceResult>(){};
+        return processUploadedResourcesService.get(Constants.accountServiceUrl + "processPreUploadedResources&default_lang_code=" + ((Language)defaultLanguageComboBox.getSelectedItem()).getCode());
+    }
+
+    private synchronized void updateProjectFiles(){
+        AndroidXMLUtils.makeChangesToManifest();
+        GradleUtils.makeChangesToGradleBuildFiles();
+        ProGuardUtils.makeChangesToProGuardFiles();
+    }
+
     private void registerApplication() {
         application.setProgress(true);
         AsyncTask<ServiceResult> registerApplicationTask = new AsyncTask<ServiceResult>() {
             @Override
             protected ServiceResult performOperation() throws Exception {
-                JSONService<ServiceResult> insertApplicationService = new JSONService<ServiceResult>(){};
-                TrApplication application = new TrApplication();
-                application.setTrJavaPackage(packageField.getText());
-                CategoryDescription cd = new CategoryDescription();
-                cd.setName(applicationNameField.getText());
-                java.util.List<CategoryDescription> cdList = new ArrayList<CategoryDescription>();
-                cdList.add(cd);
-                application.setCategoryDescription(cdList);
-                ServiceResult result = insertApplicationService.post(Constants.accountServiceUrl + "insertApplication",application);
+                ServiceResult result = postInsertTrApplication();
                 if (result.isSuccess()) {
-                    JSONService<ServiceResult> uploadFilesService = new JSONService<ServiceResult>(){};
-                    ServiceResult uploadResult = uploadFilesService.upload(Constants.uploadUrl, resourceFilesListModel.getFiles());
-                    System.out.println(uploadResult.getResult());
+                    ServiceResult uploadResult = uploadResourceFiles();
                     if (uploadResult.isSuccess()) {
-                        JSONService<ServiceResult> processUploadedResourcesService = new JSONService<ServiceResult>(){};
-                        ServiceResult processResult = processUploadedResourcesService.get(Constants.accountServiceUrl + "processPreUploadedResources&default_lang_code=" + ((Language)defaultLanguageComboBox.getSelectedItem()).getCode());
+                        ServiceResult processResult = processUploadedResourceFiles();
                         if (!processResult.isSuccess()) {
                             result = processResult;
                         }
@@ -131,13 +155,20 @@ public class UploadApplicationForm extends JPanel {
 
             @Override
             protected void onSuccess(ServiceResult result) {
-                AndroidXMLUtils.makeChangesToManifest();
-                GradleUtils.makeChangesToGradleBuildFiles();
+                updateProjectFiles();
                 if (result.isSuccess()) {
                     Messages.showInfoMessage("Your application was successfully registered in Nativer.", "Application Registered");
                     application.applicationRegistered();
                 } else {
-                    Messages.showErrorDialog("The following error occurred during registration: " + result.getErrorMessage(), "Registration Failed");
+                    StringBuilder errorMessage = new StringBuilder("The following error occurred during registration: ");
+                    if (result.getErrorMessage() != null) {
+                        errorMessage.append(result.getErrorMessage());
+                    }
+                    if (result.getJsonErrorResponse() != null) {
+                        errorMessage.append("\nerrorType: ").append(result.getJsonErrorResponse().getErrorType());
+                        errorMessage.append("\nerrorMessage: ").append(result.getJsonErrorResponse().getErrorMessage());
+                    }
+                    Messages.showErrorDialog(errorMessage.toString(), "Registration Failed");
                 }
             }
 
@@ -149,15 +180,62 @@ public class UploadApplicationForm extends JPanel {
         registerApplicationTask.run();
     }
 
-    private void updateProjectFiles() {
-        AndroidXMLUtils.makeChangesToManifest();
-        GradleUtils.makeChangesToGradleBuildFiles();
-        StringBuilder messageBuilder = new StringBuilder();
-        messageBuilder.append("The following files were updated:\n");
-        messageBuilder.append(AndroidXMLUtils.getAndroidManifest().getAbsolutePath()).append("\n");
-        for (File gradleBuildFile : GradleUtils.getGradleBuildFiles()) {
-            messageBuilder.append(gradleBuildFile.getAbsolutePath()).append("\n");
-        }
-        Messages.showInfoMessage(messageBuilder.toString(), "Project Files Updated");
+    private void updateProject(){
+        application.setProgress(true);
+        AsyncTask<ServiceResult> updateApplicationTask = new AsyncTask<ServiceResult>() {
+            @Override
+            protected ServiceResult performOperation() throws Exception {
+                ServiceResult uploadResult = uploadResourceFiles();
+                if (uploadResult.isSuccess()) {
+                    ServiceResult processResult = processUploadedResourceFiles();
+                    //if (!processResult.isSuccess()) {
+                    //    uploadResult = processResult;
+                    //}
+                }
+                return uploadResult;
+            }
+
+            @Override
+            protected void onComplete() {
+                application.setProgress(false);
+            }
+
+            @Override
+            protected void onSuccess(ServiceResult result) {
+                updateProjectFiles();
+                if(result.isSuccess()){
+                    StringBuilder messageBuilder = new StringBuilder();
+                    messageBuilder.append("The following files were updated:\n");
+                    messageBuilder.append(AndroidXMLUtils.getAndroidManifest().getAbsolutePath()).append("\n");
+                    for (File gradleBuildFile : GradleUtils.getGradleBuildFiles()) {
+                        messageBuilder.append(gradleBuildFile.getAbsolutePath()).append("\n");
+                    }
+                    for (File proGuardFile : ProGuardUtils.getProGuardFiles()) {
+                        messageBuilder.append(proGuardFile.getAbsolutePath()).append("\n");
+                    }
+                    Messages.showInfoMessage(messageBuilder.toString(), "Project Files and Resources Updated");
+                    application.applicationRegistered();
+
+                } else {
+                    StringBuilder errorMessage = new StringBuilder("The following error occurred during update resource files: ");
+                    if (result.getErrorMessage() != null) {
+                        errorMessage.append(result.getErrorMessage());
+                    }
+                    if (result.getJsonErrorResponse() != null) {
+                        errorMessage.append("\nerrorType: ").append(result.getJsonErrorResponse().getErrorType());
+                        errorMessage.append("\nerrorMessage: ").append(result.getJsonErrorResponse().getErrorMessage());
+                    }
+                    Messages.showErrorDialog(errorMessage.toString(), "Update Failed");
+                }
+
+            }
+
+            @Override
+            protected void onFailure(Throwable e) {
+                Messages.showErrorDialog("Exception occurred: " + e.getMessage(), "Error");
+            }
+        };
+
+        updateApplicationTask.run();
     }
 }

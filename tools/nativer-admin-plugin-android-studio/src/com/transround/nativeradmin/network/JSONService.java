@@ -100,6 +100,7 @@ public abstract class JSONService<T> {
             throw new IOException("HTTP " + statusCode);
         }
         Type type = new TypeToken<T>(getClass()){}.getType();
+        System.out.println(builder.toString());
         return gson.fromJson(builder.toString(), type);
     }
 

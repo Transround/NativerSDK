@@ -135,7 +135,11 @@ public class AndroidXMLUtils extends CommonUtils {
             DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc = db.parse(file);
             Element rootElement = doc.getDocumentElement();
-            return (rootElement.getElementsByTagName("application") != null && rootElement.getElementsByTagName("application").item(0) != null);
+            if (rootElement.getElementsByTagName("application") == null || rootElement.getElementsByTagName("application").item(0) == null) {
+                return false;
+            }
+            Element applicationElement = (Element) rootElement.getElementsByTagName("application").item(0);
+            return applicationElement.getChildNodes().getLength() > 0;
         } catch (SAXException e) {
             e.printStackTrace();
         } catch (ParserConfigurationException e) {
