@@ -1,18 +1,21 @@
-<idea-plugin version="2">
+<idea-plugin version="2" url="http://www.transround.com">
   <id>com.transround.nativeradmin</id>
-  <name>Nativer Admin Utility</name>
-  <version>1.0</version>
-  <vendor email="support@nativer.com" url="http://www.nativer.com">Transround</vendor>
+  <name>Android On-Device Resource Localization</name>
+  <version>1.0.1</version>
+  <vendor email="lkiss@transround.com" url="http://www.transround.com">Transround</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Adds dynamic string resource management features enabling:
+      <ul>
+        <li>in-context community translation,</li>
+        <li>on-the-fly localized string resource download,</li>
+        <li>gesture driven language change by shaking the phone</li>
+      </ul>
+      <p>Supports 70+ languages including Chinese, Right-to-left languages</p>
+      <p>Works with native Android apps using Gradle build.</p>
     ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
-    ]]>
+  <change-notes>
   </change-notes>
 
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
