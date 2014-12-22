@@ -30,7 +30,12 @@
     <string name="transround_change_language_warning">Current language is: %1$s\nIf you don\'t see any changes, you haven\'t liked any phrase yet</string>
     <string name="transround_select_preferred_language">Please select at least two preferred languages to use this function. You can do this in the application settings screen of Nativer.</string>
     <string name="transround_loading_translation">Loading translation...</string>
+    <string name="transround_loading_translation_error">Could not download translation. Please try again later.</string>
+    <string name="transround_sending_vote_request">Sending vote request...</string>
+    <string name="transround_sending_vote_request_error">Could not send vote request. Please try again later.</string>
     
     <string name="apprequest_sent">Request sent</string>
+    
+    <string name="transround_could_not_find_r">Could not find R class while reading string resources. Try to build application in release mode or change your developer applicationId to a subpackage of the release package name.</string>
 
 </resources>

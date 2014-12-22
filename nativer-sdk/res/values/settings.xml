@@ -33,6 +33,7 @@
     <string name="transround_getapplication_service_url"><![CDATA[index.php?route=product/translationservice/getApplication&sessid=%1$s&package_name=%2$s&language_codes=[\"%3$s\"]]]></string>
     <string name="transround_htmlui_url"><![CDATA[transround_backend/pluginui.php?package_name=%1$s&language_code=%2$s&version_code=%3$s&downloaded=%4$s&app_name=%5$s]]></string>
     <string name="transround_request_url"><![CDATA[index.php?route=product/translationservice/request&sessid=%1$s&java_package_name=%2$s&tr_lang_id=%3$s]]></string>
+    <string name="transround_report_abuse_url"><![CDATA[index.php?route=product/translationservice/reportAbuseByText&sessid=%1$s&resourceid=%2$s&text=%3$s&lang_code=%4$s&reason=%5$s]]></string>
 
     <!-- ITWare DEV server -->
 <!--     <string name="transround_translation_check_service_url"><![CDATA[http://192.168.0.46/dev/index.php?route=product/translationservice/checkTranslation&package_name=%1$s&language_code=%2$s&version_code=%3$s]]></string> -->
