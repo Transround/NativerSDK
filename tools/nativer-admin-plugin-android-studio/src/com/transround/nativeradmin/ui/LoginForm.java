@@ -37,7 +37,12 @@ public class LoginForm extends JPanel {
         add(contentPane, BorderLayout.WEST);
         loginButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                login();
+                if(usernameField.getText().length() == 0 ||
+                        passwordField.getText().length() == 0){
+                    Messages.showErrorDialog("Please fill the username and password fields", "Error during login");
+                } else {
+                    login();
+                }
             }
         });
         contentPane.registerKeyboardAction(new ActionListener() {

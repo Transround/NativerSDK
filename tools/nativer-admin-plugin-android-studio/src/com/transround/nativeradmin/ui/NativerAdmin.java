@@ -12,10 +12,15 @@ import com.transround.nativeradmin.util.CommonUtils;
 import com.transround.nativeradmin.util.Constants;
 
 import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class NativerAdmin extends JDialog {
     private JPanel contentPane;
@@ -54,6 +59,28 @@ public class NativerAdmin extends JDialog {
 
         setLeftComponent(loginForm);
 
+        textPane.setEditorKit(JEditorPane.createEditorKitForContentType("text/html"));
+        textPane.setEditable(false);
+
+        textPane.addHyperlinkListener(new HyperlinkListener() {
+            public void hyperlinkUpdate(HyperlinkEvent e) {
+                System.out.println("Link has been clicked...");
+                if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+                    System.out.println("Link has been activated...");
+                    if(Desktop.isDesktopSupported()) {
+                        try {
+                            URI uri = e.getURL().toURI();
+                            Desktop.getDesktop().browse(uri);
+                        } catch (URISyntaxException e1) {
+                            e1.printStackTrace();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                }
+            }
+        });
+
         progressBar.setIndeterminate(true);
         progressBar.setVisible(false);
         AsyncTask<Eula> getEulaTask = new AsyncTask<Eula>() {
@@ -70,7 +97,6 @@ public class NativerAdmin extends JDialog {
 
             @Override
             protected void onSuccess(Eula result) {
-                textPane.setContentType("text/html");
                 textPane.setText(result.getText());
                 textPane.setCaretPosition(0);
                 leftPanel.updateUI();

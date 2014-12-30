@@ -5,7 +5,12 @@ import com.transround.nativeradmin.swing.AsyncTask;
 import com.transround.nativeradmin.util.Constants;
 
 import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Created by szeibert on 2014.12.04..
@@ -19,6 +24,27 @@ public class HelpForm extends JPanel {
     public HelpForm(final NativerAdmin application) {
         this.application = application;
         add(contentPane, BorderLayout.WEST);
+
+        editorPane.setEditorKit(JEditorPane.createEditorKitForContentType("text/html"));
+        editorPane.setEditable(false);
+
+        editorPane.addHyperlinkListener(new HyperlinkListener() {
+            public void hyperlinkUpdate(HyperlinkEvent e) {
+                if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+                    if (Desktop.isDesktopSupported()) {
+                        try {
+                            URI uri = e.getURL().toURI();
+                            Desktop.getDesktop().browse(uri);
+                        } catch (URISyntaxException e1) {
+                            e1.printStackTrace();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                }
+            }
+        });
+
         application.setProgress(true);
         AsyncTask<String> getHelpTextTask = new AsyncTask<String>() {
             @Override
@@ -34,7 +60,6 @@ public class HelpForm extends JPanel {
 
             @Override
             protected void onSuccess(String result) {
-                editorPane.setContentType("text/html");
                 editorPane.setText(result);
             }
 

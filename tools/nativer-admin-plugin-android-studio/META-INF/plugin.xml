@@ -1,11 +1,12 @@
-<idea-plugin version="2" url="http://www.transround.com">
+<idea-plugin version="2" url="https://github.com/Transround/NativerSDK/tree/master/tools/nativer-admin-plugin-android-studio">
   <id>com.transround.nativeradmin</id>
   <name>Android On-Device Resource Localization</name>
-  <version>1.0.1</version>
-  <vendor email="lkiss@transround.com" url="http://www.transround.com">Transround</vendor>
+  <version>1.0.3</version>
+  <vendor email="lkiss@transround.com" url="http://www.transround.comh">Transround</vendor>
 
   <description><![CDATA[
-      Adds dynamic string resource management features enabling:
+      <p><b>Tools >> On-Device Resource Localization</b></p>
+      <p>Adds dynamic string resource management features enabling:</p>
       <ul>
         <li>in-context community translation,</li>
         <li>on-the-fly localized string resource download,</li>
@@ -15,8 +16,15 @@
       <p>Works with native Android apps using Gradle build.</p>
     ]]></description>
 
-  <change-notes>
-  </change-notes>
+  <change-notes><![CDATA[
+    <p>1.0.3</p>
+    <ul>
+        <li>Various bug fixes</li>
+        <li>Renamed menu item in tools menu to On-Device Resource Localization</li>
+        <li>Corrected project url and description in plugin.xml</li>
+    </ul>
+
+    ]]></change-notes>
 
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="131"/>
@@ -42,7 +50,7 @@
   <actions>
     <!-- Add your actions here -->
     <action id="com.transround.nativeradmin.openui" class="com.transround.nativeradmin.OpenUI"
-            text="Register App in Nativer"
+            text="On-Device Resource Localization"
             description="You can easily register your app and upload its resources to Nativer">
       <add-to-group group-id="ToolsMenu" anchor="first"/>
     </action>
