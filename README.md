@@ -21,8 +21,13 @@ Then visit our [Nativer Developer Self Service site] (http://developer.nativer.c
 Getting started
 ===============
 
-Installation
-------------
+Automated installation using Android Studio plugin
+--------------------------------------------------
+The plugin will guide you through the integration and registration steps and will carry out the necessary configuration file changes, please follow these [instructions](https://github.com/Transround/NativerSDK/tree/master/tools/nativer-admin-plugin-android-studio#instructions).
+
+Manual installation
+-------------------
+In case you are not using Android Studio or prefer to manually complete the necessary configuration changes please follow the description below.
 
 #### Common steps for Android Studio|Gradle and Eclipse
 
