@@ -8,9 +8,14 @@ Nativer SDK adds dynamic resource management functionality to any Android app so
 
 App localization SDK integration within 20 minutes
 --------------------------------------------------
-You only have to change the following configuration files in order to integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
+Only few configuration files (detailed below) have to be changed in order to integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
 
-For detailed step-by-step instructions how to integrate Nativer SDK into your app please check our wiki about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
+However, if you are using Android Studio, the integration can even be completed easier by using our [Android Studio plugin](https://github.com/Transround/NativerSDK/tree/master/tools/nativer-admin-plugin-android-studio#instructions).
+The plugin will guide you through the integration and registration steps and will carry out the necessary configuration file changes. So, if you prefer to use this plugin please follow these [instructions](https://github.com/Transround/NativerSDK/tree/master/tools/nativer-admin-plugin-android-studio#instructions).
+
+In case you prefer to manually complete the necessary configuration changes please follow the description below.
+
+If you would like to get even more details please check our wiki for step-by-step instructions about [How to integrate Nativer SDK](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK).
 Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
 
 Getting started
