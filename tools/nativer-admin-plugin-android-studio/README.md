@@ -1,6 +1,4 @@
-Enabling your users to use their languages within your app.
-
-It’s just 15 minutes of your time to let users learn and practice languages while translating and using your app.
+Enabling your users to use their languages within your app: It’s just 15 minutes of your time to let users learn and practice languages while translating and using your app.
 Android on-device resource localization
 =======================================
 
