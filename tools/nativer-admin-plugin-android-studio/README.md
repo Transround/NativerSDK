@@ -15,7 +15,7 @@ Instructions
 
 __<<< do not forget: Once you register the plugin and restart Android Studio - you can find the new  plugin in the Tools menu >>>__
 
-In Android Studio 1.0 choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
+In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
 Then install selected plugin.
 
 ![](./doc/images/1_install_plugin.png)
