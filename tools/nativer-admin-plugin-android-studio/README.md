@@ -1,4 +1,4 @@
-Android multilingual runtime extension: the Nativer SDK
+Android on-device localization
 =======================================
 
 Adds dynamic string resource management features enabling:
