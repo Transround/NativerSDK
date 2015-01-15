@@ -1,3 +1,4 @@
+Enabling your users to use their languages within your app
 Android on-device resource localization
 =======================================
 
