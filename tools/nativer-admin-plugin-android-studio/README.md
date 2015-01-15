@@ -1,4 +1,4 @@
-Android on-device localization
+Android on-device resource localization
 =======================================
 
 Adds dynamic string resource management features enabling:
