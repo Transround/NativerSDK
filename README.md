@@ -1,4 +1,4 @@
-App localization for Android - Nativer SDK
+Android multilingual runtime extension: the Nativer SDK
 ==========================================
 
 App localization SDK and community app localization service for multilingual Android apps. 
