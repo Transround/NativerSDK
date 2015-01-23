@@ -1,8 +1,7 @@
 Android multilingual runtime extension: the Nativer SDK
 ==========================================
 
-App localization SDK and community app localization service for multilingual Android apps. 
-Nativer SDK adds dynamic resource management functionality to any Android app so it can be translated to any language with Nativer service:
+App localization SDK adds dynamic resource management functionality to any Android app:
 - Translating apps into any language using smartphones with immediate preview
 - Distributing language resources on-the-fly to end users
 
