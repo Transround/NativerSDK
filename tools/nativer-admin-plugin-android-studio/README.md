@@ -13,7 +13,6 @@ Supports 70+ languages including Chinese, Right-to-left languages
 Instructions
 ------------
 
-__<<< do not forget: Once you register the plugin and restart Android Studio - you can find the new  plugin in the Tools menu >>>__
 
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
 Then install selected plugin.
