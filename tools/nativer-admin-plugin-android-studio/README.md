@@ -1,4 +1,4 @@
-Enabling your users to use their languages within your app: It’s just 15 minutes of your time to let users learn and practice languages while translating and using your app.
+Enabling your users to use their languages within your app: It’s less than 20 minutes of your time to let users learn and practice languages while translating and using your app.
 Android on-device resource localization
 =======================================
 
@@ -26,9 +26,11 @@ After restart Android Studio from Tools menu select “On-device resource locali
 At the first use you need to register yourself and your app to the localization 
 backend service - 90 days trial - no commitment from your side.
 
-Create a new account (step 2), register your app (step 3) and upload resources (step 4)
-
 ![](./doc/images/3_register_new_account.png)
+
+Then register your app (step 2), integrate SDK (step 3) and upload translatable resources of your app (step 4).
+
+![](./doc/images/4_register_new_account_2.png)
 
 After successful registration and resource upload - the backend service generates 70+ language resource files for your app. 
 
