@@ -26,20 +26,11 @@ After restart Android Studio from Tools menu select “On-device resource locali
 At the first use you need to register yourself and your app to the localization 
 backend service - 90 days trial - no commitment from your side.
 
-Register as new account
+Create a new account (step 2), register your app (step 3) and upload resources (step 4)
 
 ![](./doc/images/3_register_new_account.png)
 
-Enter your contact details:
-
-![](./doc/images/4_register_new_account_2.png)
-
-Register your app details:
-
-![](./doc/images/5_register_your_app.png)
-
-
-After successful registration - the backend service generates 70+ language resource files for your app. 
+After successful registration and resource upload - the backend service generates 70+ language resource files for your app. 
 
 Testing: Generate a new APK and load it on your phone.
 After you start your app - language manager screen appears: choose developer mode from the menu.
