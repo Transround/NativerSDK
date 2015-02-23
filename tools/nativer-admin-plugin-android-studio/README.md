@@ -34,11 +34,11 @@ After successful registration and resource upload - the backend service generate
 
 Testing: Generate a new APK and load it on your phone.
 
-**Note**: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please follow this workaround until we fix the issue.
+**Note for Andorid Studion version 1.1 users**: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please **follow this workaround* until we fix the issue.
 
-Please modify the gradle version from 1.1.0 to 1.0.0 in your project's build.gradle file.
+Please **modify the gradle version from 1.1.0 to 1.0.0** in your project's build.gradle file.
 
-When the build.gradle file is modfied by the plugin it contains the following section
+When the build.gradle file is modfied by the Android Studio plugin it contains the following section
 
 ```groovy
     ...
