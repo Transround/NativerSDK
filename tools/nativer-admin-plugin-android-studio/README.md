@@ -36,7 +36,6 @@ that should be changed as follows
 ```
 
 This modification should solve the above compilation error.
-
 -
 
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
