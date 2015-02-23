@@ -13,6 +13,28 @@ Supports 70+ languages including Chinese, Right-to-left languages
 Instructions
 ------------
 
+Important note: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please follow this workaround until we fix the issue.
+Please modify the gradle version in your project's build.gradle file from 1.1.0 to 1.0.0.
+
+The build.gradle should contain the following section
+
+```groovy
+    ...
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    ...
+```
+
+that should be changed as follows
+
+```groovy
+    ...
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    ...
+```
+
+This should solve the above compilation error.
 
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
 Then install selected plugin.
