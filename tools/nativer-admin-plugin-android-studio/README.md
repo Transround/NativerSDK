@@ -12,33 +12,6 @@ Supports 70+ languages including Chinese, Right-to-left languages
 
 Instructions
 ------------
-
-**Important note**: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please follow this workaround until we fix the issue.
-
-Please modify the gradle version from 1.1.0 to 1.0.0 in your project's build.gradle file.
-
-The build.gradle should contain the following section
-
-```groovy
-    ...
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
-    ...
-```
-
-that should be changed as follows
-
-```groovy
-    ...
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
-    ...
-```
-
-This modification should solve the above compilation error.
-
---
-
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
 Then install selected plugin.
 
@@ -60,6 +33,31 @@ Then register your app (step 2), integrate SDK (step 3) and upload translatable 
 After successful registration and resource upload - the backend service generates 70+ language resource files for your app. 
 
 Testing: Generate a new APK and load it on your phone.
+
+**Note**: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please follow this workaround until we fix the issue.
+
+Please modify the gradle version from 1.1.0 to 1.0.0 in your project's build.gradle file.
+
+When the build.gradle file is modfied by the plugin it contains the following section
+
+```groovy
+    ...
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    ...
+```
+
+that should be changed as follows
+
+```groovy
+    ...
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    ...
+```
+
+Please carry out a clean build of your project. This workaround should solve the above compilation error.
+
 After you start your app - language manager screen appears: choose developer mode from the menu.
 
 ![](./doc/images/6_welcome_ui.png)
