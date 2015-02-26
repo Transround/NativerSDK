@@ -12,21 +12,12 @@ Supports 70+ languages including Chinese, Right-to-left languages
 
 Instructions
 ------------
-In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization. 
-Then install selected plugin.
+In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization and install it. 
 
 ![](./doc/images/1_install_plugin.png)
 
-After restart Android Studio from Tools menu select “On-device resource localization”.
-
-![](./doc/images/2_tools_menu.png)
-
-At the first use you need to register yourself and your app to the localization 
-backend service - 90 days trial - no commitment from your side.
-
-![](./doc/images/3_register_new_account.png)
-
-Then register your app (step 2), integrate SDK (step 3) and upload translatable resources of your app (step 4).
+Restart Android studio.
+After restart the Nativer Admin plugin will be activated in the left pane providing a registration and integration wizard for the Nativer service. Registering has a 90 days trial period – no commitment from your side. 
 
 ![](./doc/images/4_register_new_account_2.png)
 
