@@ -28,7 +28,7 @@ Testing the integration
 ------------
 Generate a new APK and load it on your phone. (See note for Android Studio 1.1)
 
-Checking the translatability: 
+Checking the translation scope
 
 After you start your app - language manager screen appears: choose developer mode from the menu.
 
@@ -38,13 +38,14 @@ After you start your app - language manager screen appears: choose developer mod
 
 Each translatable resource will have a star added to the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
 
-Check the user experience
+Checking the user experience
 
 Based on what translation strategy you choose  (machine, machine + community, pro) the language manager will offer different options to your users. Choose Translate on the language manager screen to see how easy to translate your app with our unique on-device translation – our translator app [Nativer from GooglePlay] (https://play.google.com/store/apps/details?id=com.transround.nativer&referrer=utm_source%3Dgithub%26utm_medium%3Dreferral%26utm_campaign%3Don-device-leiras) automatically downloaded.
 
 Releasing your app
 ------------
 Your app is ready for release. Set the localization strategy – which language, which option – on http://developer.nativer.com using your registration account. Release your app through your preferred distribution.
+
 ------------
 
 
