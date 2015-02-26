@@ -18,7 +18,7 @@ In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> A
 
 Restart Android studio.
 
-After restart the Nativer Admin plugin will be activated in the left pane providing a registration and integration wizard for the Nativer service. Registering has a 90 days trial period – no commitment from your side. 
+After restart the Nativer Admin plugin will be activated in the right pane providing a registration and integration wizard for the Nativer service. Registering has a 90 days trial period – no commitment from your side. 
 
 ![](./doc/images/4_register_new_account_2.png)
 
@@ -45,10 +45,11 @@ Based on what translation strategy you choose  (machine, machine + community, pr
 Releasing your app
 ------------
 Your app is ready for release. Set the localization strategy – which language, which option – on http://developer.nativer.com using your registration account. Release your app through your preferred distribution.
+------------
 
 
-
-**Note for Android Studio version 1.1 users**: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please **follow this workaround** until we fix the issue.
+**Note for Android Studio version 1.1 users**: 
+In case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please **follow this workaround** until we fix the issue.
 
 **Modify the gradle version from 1.1.0 to 1.0.0** in your project's build.gradle file.
 
