@@ -10,7 +10,7 @@ Adds dynamic string resource management features enabling:
 
 Supports 70+ languages including Chinese, Right-to-left languages
 
-Instructions
+Enrolling your app
 ------------
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization and install it. 
 
@@ -21,9 +21,26 @@ After restart the Nativer Admin plugin will be activated in the left pane provid
 
 ![](./doc/images/4_register_new_account_2.png)
 
-After successful registration and resource upload - the backend service generates 70+ language resource files for your app. 
+You need to register yourself once, and each app you want to enroll. The wizard guide you through the registration and the SDK integration process of the current project. After successful registration and resource upload - the backend service generates 70+ language resource files for your app.
 
-Testing: Generate a new APK and load it on your phone.
+Testing the integration
+
+Generate a new APK and load it on your phone. (See note for Android Studio 1.1)
+Checking the translatability: After you start your app - language manager screen appears: choose developer mode from the menu.
+
+![](./doc/images/6_welcome_ui.png)
+![](./doc/images/7_welcome_ui_2.png)
+![](./doc/images/8_pseudo_translation.png)
+
+Each translatable resource will have a star added to the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
+
+Check the user experience
+
+Based on what translation strategy you choose  (machine, machine + community, pro) the language manager will offer different options to your users.  
+Choose Translate on the lanugage manager screen to see how easy to translate your app with our unique on-device translation – our translator app [Nativer from GooglePlay] (https://play.google.com/store/apps/details?id=com.transround.nativer&referrer=utm_source%3Dgithub%26utm_medium%3Dreferral%26utm_campaign%3Don-device-leiras) automatically downloaded.
+
+Releasing your app
+Your app is ready for release. Set the localization strategy – which language, which option – on http://developer.nativer.com using your registration account. Release your app through your preferred distrbution.
 
 **Note for Andorid Studio version 1.1 users**: in case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please **follow this workaround** until we fix the issue.
 
@@ -51,9 +68,7 @@ Please carry out a clean build of your project. This workaround should solve the
 
 After you start your app - language manager screen appears: choose developer mode from the menu.
 
-![](./doc/images/6_welcome_ui.png)
-![](./doc/images/7_welcome_ui_2.png)
-![](./doc/images/8_pseudo_translation.png)
+
 
 
 Then in your app all your translatable resources will have a star added to the beginning of the resource string. 
