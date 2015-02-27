@@ -22,8 +22,6 @@ After restart the Nativer Admin plugin will be activated in the right pane provi
 
 ![](./doc/images/4_register_new_account_2.png)
 
-After successful registration and resource upload - the backend service generates 70+ language resource files for your app.
-
 Testing the integration
 ------------
 Generate a new APK and load it on your phone. (See note for Android Studio 1.1)
