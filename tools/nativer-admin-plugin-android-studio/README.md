@@ -18,11 +18,11 @@ In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> A
 
 Restart Android studio.
 
-After restart the Nativer Admin plugin will be activated in the right pane providing a step by step instruction. There is no commitment from your side until you launch your app with the Nativer SDK in a public appstore. 
+After restart the Nativer Admin plugin will be activated in the right pane providing a step by step instruction. (There is no commitment from your side until you launch your app with the Nativer SDK in a public appstore.) 
 
 ![](./doc/images/4_register_new_account_2.png)
 
-You need to register yourself once, and each app you want to enroll. The wizard guide you through the registration and the SDK integration process of the current project. After successful registration and resource upload - the backend service generates 70+ language resource files for your app.
+After successful registration and resource upload - the backend service generates 70+ language resource files for your app.
 
 Testing the integration
 ------------
