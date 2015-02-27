@@ -10,7 +10,7 @@ Adds dynamic string resource management features enabling:
 
 Supports 70+ languages including Chinese, Right-to-left languages
 
-Enrolling your app
+How to try it?
 ------------
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization and install it. 
 
@@ -18,7 +18,7 @@ In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> A
 
 Restart Android studio.
 
-After restart the Nativer Admin plugin will be activated in the right pane providing a registration and integration wizard for the Nativer service. Registering has a 90 days trial period – no commitment from your side. 
+After restart the Nativer Admin plugin will be activated in the right pane providing a step by step instruction. There is no commitment from your side until you launch your app with the Nativer SDK in a public appstore. 
 
 ![](./doc/images/4_register_new_account_2.png)
 
