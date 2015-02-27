@@ -34,7 +34,7 @@ After you start your app - Nativer SDK automatically launching the language mana
 
 Each translatable resource should have a star added to the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
 
-For setting the languages pls go to http://developer.nativer.com using your registration account.
+For setting the language scope pls go to http://developer.nativer.com using your registration account.
 
 ------------
 
