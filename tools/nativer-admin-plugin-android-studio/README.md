@@ -40,6 +40,7 @@ For setting the language scope pls go to http://developer.nativer.com using your
 
 
 **Note for Android Studio version 1.1 users**: 
+
 In case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please **follow this workaround** until we fix the issue.
 
 **Modify the gradle version from 1.1.0 to 1.0.0** in your project's build.gradle file.
