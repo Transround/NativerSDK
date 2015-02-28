@@ -1,10 +1,10 @@
-Enabling your users to use their languages within your app: It’s less than 20 minutes of your time to let users learn and practice languages while translating and using your app.
 Android on-device resource localization
 =======================================
 
-Adds dynamic string resource management features enabling:
+Enabling your users to use their languages within your app. 
+It’s less than 20 minutes of your time to add dynamic string resource management to your app to get:
 
-* in-context community translation,
+* in-context on the phone community translation,
 * on-the-fly localized string resource download,
 * gesture driven language change by shaking the phone
 
