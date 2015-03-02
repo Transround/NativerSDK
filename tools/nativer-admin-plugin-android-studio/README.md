@@ -32,7 +32,7 @@ After you start your app - Nativer SDK automatically launching the language mana
 ![](./doc/images/7_welcome_ui_2.png)
 ![](./doc/images/8_pseudo_translation.png)
 
-Each translatable resource should have a star added to the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
+Each translatable resource is marked with a star at the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
 
 For setting the language scope pls go to http://developer.nativer.com using your registration account.
 
@@ -54,7 +54,7 @@ When the build.gradle file is modfied by the Android Studio plugin it contains t
     ...
 ```
 
-that should be changed as follows
+that should be changed as the following
 
 ```groovy
     ...
