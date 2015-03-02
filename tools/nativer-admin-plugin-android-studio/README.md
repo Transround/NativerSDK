@@ -64,17 +64,3 @@ that should be changed as follows
 ```
 
 Please carry out a clean build of your project. This workaround should solve the above compilation error.
-
-After you start your app - language manager screen appears: choose developer mode from the menu.
-
-
-
-
-Then in your app all your translatable resources will have a star added to the beginning of the resource string. 
-Shake your phone to switch between the original and the test versions. 
-
-Your app is ready for On-device resource localization.
-Download the translator app [Nativer from GooglePlay](https://play.google.com/store/apps/details?id=com.transround.nativer&referrer=utm_source%3Dgithub%26utm_medium%3Dreferral%26utm_campaign%3Don-device-leiras) to see the translation experience. 
-
-
-
