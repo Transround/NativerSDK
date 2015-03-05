@@ -38,7 +38,7 @@ Before publishing your app you can configure the language settings and set up in
 
 For Setting languages pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=localisation/language_setup  using your registration account.
 
-For Setting languages pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=catalog/tracking using your registration account.
+For Setting Analytics pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=catalog/tracking using your registration account.
 
 ------------
 
