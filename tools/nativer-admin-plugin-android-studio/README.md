@@ -39,32 +39,3 @@ Before publishing your app you can configure the language settings and set up in
 For Setting languages pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=localisation/language_setup  using your registration account.
 
 For Setting Analytics pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=catalog/tracking using your registration account.
-
-------------
-
-
-**Note for Android Studio version 1.1 users**: 
-
-In case you are using Android Studio version 1.1.x and run into error "Error:No such property: bootClasspath for class: com.android.build.gradle.AppPlugin" when building your project then please **follow this workaround** until we fix the issue.
-
-**Modify the gradle version from 1.1.0 to 1.0.0** in your project's build.gradle file.
-
-When the build.gradle file is modfied by the Android Studio plugin it contains the following section
-
-```groovy
-    ...
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
-    ...
-```
-
-that should be changed as the following
-
-```groovy
-    ...
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
-    ...
-```
-
-Please carry out a clean build of your project. This workaround should solve the above compilation error.
