@@ -1,11 +1,11 @@
-Android multilingual runtime extension: the Nativer SDK
+Android Dynamic Resource Management: the Nativer SDK
 ==========================================
 
-App localization SDK adds dynamic resource management functionality to any Android app:
+Nativer SDK adds dynamic resource management functionality to any Android app:
 - Translating apps into any language using smartphones with immediate preview
 - Distributing language resources on-the-fly to end users
 
-App localization SDK integration within 20 minutes
+Nativer SDK integration within 15 minutes
 --------------------------------------------------
 Only few configuration files (detailed below) have to be changed in order to integrate and utilize the localization services provided by the SDK, i.e. there is no need to change any single code line in your app.
 
