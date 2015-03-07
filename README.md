@@ -16,11 +16,11 @@ The plugin will guide you through the integration and will carry out the necessa
 For Eclipse IDE we provide a step-by-step integration instructions: 
 In case you prefer to manually complete the necessary configuration changes please follow the description below.
 
-For reference of the complete integration, testing and configuration please visit the [Nativer Developer Service Site] (http://developer.nativer.com/).
+For reference of the complete integration, testing and configuration process please visit the [Nativer Developer Service Site] (http://developer.nativer.com/).
 
 Sample Multilanguage Android app project
 ----------------------------------------
-You can check how easy to build in the SDK and try the main features of the SDK using our sample [App Localization project] (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample).
+You can check how easy to build in the SDK and try the it's main features using our sample [App Localization project] (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample).
 
 Glossary
 --------
