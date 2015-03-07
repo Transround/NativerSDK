@@ -1,12 +1,11 @@
-Android on-device resource localization
-=======================================
+Android Dynamic Resource Management
+===================================
 
-Enabling your users to use their languages within your app. 
-It’s less than 20 minutes of your time to add dynamic string resource management to your app to get:
-
-* in-context on the phone community translation,
-* on-the-fly localized string resource download,
-* gesture driven language change by shaking the phone
+Android Studio Plugin automates the deployement of Nativer SDK  adding dynamic resource management functionaliy to your app.
+Nativer SDK enables:
+- on-the-fly language resource management
+- connection to the backend management console to control on user, machine and pro generated resource creation, distribution and usage
+- instant in-app translation for accelerated user contribution.
 
 Supports 70+ languages including Chinese, Right-to-left languages
 
