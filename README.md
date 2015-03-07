@@ -25,7 +25,7 @@ Generate a new APK and load it on your phone.
 
 After you start your app - Nativer SDK automatically launching the language manager popup screen. From the top right corner menu choose the developer mode.
 
-![](//github.com/Transround/NativerSDK/blob/master/tools/nativer-admin-plugin-android-studio/doc/images/6_welcome_ui.png)
+![](http://github.com/Transround/NativerSDK/blob/master/tools/nativer-admin-plugin-android-studio/doc/images/6_welcome_ui.png)
 ![](//github.com/Transround/NativerSDK/blob/master/tools/nativer-admin-plugin-android-studio/doc/images/7_welcome_ui_2.png)
 ![](//github.com/Transround/NativerSDK/blob/master/tools/nativer-admin-plugin-android-studio/doc/images/8_pseudo_translation.png)
 
