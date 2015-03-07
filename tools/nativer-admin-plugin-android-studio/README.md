@@ -40,7 +40,7 @@ Each translatable resource is marked with a star at the beginning of the resourc
 How to configure it?
 --------------------
 
-Before publishing your app on the management console you can configure how language resources are generated and used, and how to set up integrated analytics to get insights the language impact of user behaviour.
+Before publishing your app you can configure how language resources are generated and used, and how to set up integrated analytics to get insights the language impact of user behaviour.
 
 For Setting languages pls. go to [Developer console - Language setting ](http://nativer01.nativer.com/prod/admin/index.php?route=localisation/language_setup)  using your registration account.
 
