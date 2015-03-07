@@ -15,11 +15,10 @@ For Android Studio an integration plugin released to automate the process: [Andr
 The plugin will guide you through the integration and will carry out the necessary configuration file changes for your app. It also guide you through the testing of the integration and the setup of the resource management consol backend. 
 
 For Eclipse IDE we provide a step-by-step integration instructions: 
-https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK
 [Integration under Eclipse](https://github.com/Transround/NativerSDK/wiki/How-to-integrate-Nativer-SDK)
 In case you prefer to manually complete the necessary configuration changes please follow the description below.
 
-For reference of the complete integration, testing and configuration process please visit the [Nativer Developer Service Site] (http://developer.nativer.com/).
+For reference of the complete integration, testing and configuration process please visit the [Nativer Developer Console] (http://developer.nativer.com/).
 
 Sample Multilanguage Android app project
 ----------------------------------------
