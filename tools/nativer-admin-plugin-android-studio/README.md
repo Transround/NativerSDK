@@ -1,4 +1,4 @@
-Android Stuido Plugin for Nativer SDK integration
+Android Studio Plugin for Nativer SDK integration
 =================================================
 
 Android Studio Plugin is for automating Nativer SDK integration to your app. Step-by-step it will 
@@ -6,10 +6,14 @@ Android Studio Plugin is for automating Nativer SDK integration to your app. Ste
 - setup the management consol,
 - guide you through the testing process.
 
-Integrating the technology takes about 15 minutes. Your app will be ready for dynamic localization, your APK can be published without additonal built in language resources. 
+This document describes how to
+- install the plugin into your Android project
+- test the dynamic resource management integration
+
+Integrating the technology takes about 15 minutes. Your app will be ready for dynamic localization, your APK can be published without additonal built in language resources.
 
 How to try it?
-------------
+--------------
 In Android Studio choose File -> Settings -> Plugins -> Browse repositories -> Android On-Device Resource Localization and install it. 
 
 ![](./doc/images/1_install_plugin.png)
@@ -20,8 +24,8 @@ After restart the Nativer Admin plugin will be activated in the right pane provi
 
 ![](./doc/images/4_register_new_account_2.png)
 
-Testing the integration
-------------
+How to test it?
+---------------
 Generate a new APK and load it on your phone. (See note for Android Studio 1.1)
 
 After you start your app - Nativer SDK automatically launching the language manager popup screen. From the top right corner menu choose the developer mode.
@@ -32,8 +36,11 @@ After you start your app - Nativer SDK automatically launching the language mana
 
 Each translatable resource is marked with a star at the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
 
-Before publishing your app you can configure the language settings and set up integrated analytics. 
+How to configure it?
+--------------------
 
-For Setting languages pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=localisation/language_setup  using your registration account.
+Before publishing your app on the management console you can configure how language resources are generated and used, and how to set up integrated analytics to get insights the language impact of user behaviour.
 
-For Setting Analytics pls. go to http://nativer02.nativer.com/prod/admin/index.php?route=catalog/tracking using your registration account.
+For Setting languages pls. go to http://developer.nativer.com/prod/admin/index.php?route=localisation/language_setup  using your registration account.
+
+For Setting Analytics pls. go to http://developer.nativer.com/prod/admin/index.php?route=catalog/tracking using your registration account.
