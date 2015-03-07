@@ -10,7 +10,7 @@ Nativer SDK integration in 15 minutes
 --------------------------------------------------
 No source code change needed in your app, only few configuration files have to be modified to integrate and utilize the SDK.
 
-For Android Studio an integration plugin released to automate the process: [Android Studio plugin](https://github.com/Transround/NativerSDK/tree/master/tools/nativer-admin-plugin-android-studio##android-studio-plugin-for-nativer-sdk-integration).
+For Android Studio an integration plugin released to automate the process: [Android Studio plugin](https://github.com/Transround/NativerSDK/tree/master/tools/nativer-admin-plugin-android-studio#android-studio-plugin-for-nativer-sdk-integration).
 The plugin will guide you through the integration and will carry out the necessary configuration file changes for your app. It also guide you through the testing of the integration and the setup of the resource management consol backend. 
 
 For Eclipse IDE we provide a step-by-step integration instructions: 
