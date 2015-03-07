@@ -19,6 +19,26 @@ For Eclipse IDE we provide a step-by-step integration instructions:
 
 For reference of the complete integration, testing and configuration process please visit the [Nativer Developer Console] (http://developer.nativer.com/).
 
+How to test it?
+---------------
+Generate a new APK and load it on your phone.
+
+After you start your app - Nativer SDK automatically launching the language manager popup screen. From the top right corner menu choose the developer mode.
+
+![](./doc/images/6_welcome_ui.png)
+![](./doc/images/7_welcome_ui_2.png)
+![](./doc/images/8_pseudo_translation.png)
+
+Each translatable resource is marked with a star at the beginning of the resource string. Shake your phone to switch between the original and the test versions. If the translation scope is ok then your app is ready for On-device resource localization. 
+
+How to configure it?
+--------------------
+
+Before publishing your app on the management console you can configure how language resources are generated and used, and how to set up integrated analytics to get insights the language impact of user behaviour.
+
+For Setting languages pls. go to [Developer console - Language setting ](http://nativer01.nativer.com/prod/admin/index.php?route=localisation/language_setup)  using your registration account.
+
+For Setting Analytics pls. go to [Developer console - Analytics setting ](http://nativer01.nativer.com/prod/admin/index.php?route=catalog/tracking) using your registration account.
 Sample Multilanguage Android app project
 ----------------------------------------
 You can check how easy to build in the SDK and try the it's main features using our sample [App Localization project] (https://github.com/Transround/NativerSDK/tree/master/nativer-sdk-sample).
