@@ -6,9 +6,10 @@ Android Studio Plugin is for automating Nativer SDK integration to your app. Ste
 - setup the management consol,
 - guide you through the testing process.
 
-This document describes how to
+This document describes how to:
 - install the plugin into your Android project
 - test the dynamic resource management integration
+- connect to the management console
 
 Integrating the technology takes about 15 minutes. Your app will be ready for dynamic localization, your APK can be published without additonal built in language resources.
 
