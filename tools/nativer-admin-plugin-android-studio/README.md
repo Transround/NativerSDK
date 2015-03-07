@@ -1,13 +1,12 @@
-Android Dynamic Resource Management
-===================================
+Android Stuido Plugin for Nativer SDK integration
+=================================================
 
-Android Studio Plugin automates the deployement of Nativer SDK  adding dynamic resource management functionaliy to your app.
-Nativer SDK enables:
-- on-the-fly language resource management
-- connection to the backend management console to control on user, machine and pro generated resource creation, distribution and usage
-- instant in-app translation for accelerated user contribution.
+Android Studio Plugin is for automating Nativer SDK integration to your app. Step-by-step it will 
+- install Nativer SDK into your app,
+- setup the management consol,
+- guide you through the testing process.
 
-Supports 70+ languages including Chinese, Right-to-left languages
+Integrating the technology takes about 15 minutes. Your app will be ready for dynamic localization, your APK can be published without additonal built in language resources. 
 
 How to try it?
 ------------
