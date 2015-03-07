@@ -16,16 +16,7 @@ The plugin will guide you through the integration and will carry out the necessa
 For Eclipse IDE we provide a step-by-step integration instructions: 
 In case you prefer to manually complete the necessary configuration changes please follow the description below.
 
-Then visit our [Nativer Developer Self Service site] (http://developer.nativer.com/) for further instructions.
-
-
-Android app localization - common steps
-----------------------------------------
-* In order to utilize the Nativer localization service you should go through a simple registration process at our [Developer Self Service Site] (http://nativer01.nativer.com/prod/admin/index.php?route=common/information&information_id=28&menu=devinfo). The main steps of the process are as follows:
-    * Register your app in our database
-    * Upload the resource files of your app and define the scope of translation
-
-Note: In order to try the translation feature you will also need the Nativer app. The compiled app will warn you that Nativer is needed and will redirect you to the Nativer download page on Google Play.
+For reference of the complete integration, testing and configuration please visit the [Nativer Developer Service Site] (http://developer.nativer.com/).
 
 Sample Multilanguage Android app project
 ----------------------------------------
