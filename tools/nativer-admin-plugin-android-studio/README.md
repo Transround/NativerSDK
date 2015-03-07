@@ -11,7 +11,7 @@ This document describes how to:
 - test the dynamic resource management integration
 - connect to the management console
 
-Integrating the technology takes about 15 minutes. Your app will be ready for dynamic localization, your APK can be published without additonal built in language resources.
+Integrating the technology takes about 15 minutes. Your app will be ready for dynamic localization, your APK can be published to the market without additonal built in language resources.
 
 How to try it?
 --------------
