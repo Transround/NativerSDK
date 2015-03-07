@@ -1,6 +1,5 @@
-Android Dynamic Resource Management: 
-Nativer SDK
-==========================================
+Android Dynamic Resource Management: Nativer SDK
+================================================
 
 Nativer SDK adds dynamic resource management to any Android app, so language resources can be downloaded on a live app:
 - Localization process can be decoupled from the app build cycle
