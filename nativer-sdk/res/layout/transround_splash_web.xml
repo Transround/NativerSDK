@@ -5,7 +5,9 @@
     android:layout_marginTop="90dp"
     android:layout_marginBottom="90dp"
     android:background="@color/light_gray"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:id="@+id/wvcontainer"
+    >
 
     <!-- LinearLayout
         android:id="@+id/headerlayout"
@@ -42,7 +44,6 @@
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/headerlayout"
         android:layout_marginTop="1dp"/>
 
        
