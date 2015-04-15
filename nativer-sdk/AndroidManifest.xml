@@ -8,4 +8,21 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
 
+    <!--Permission required by Nativer. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--Permission required by Nativer. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application>
+        <!--Activity required by Nativer. -->
+        <activity android:exported="true" android:name="com.transround.plugin.activity.RefreshScreen"/>
+        <!--Translation Interface Service required by Nativer. -->
+        <service android:name="com.transround.plugin.service.PluginInterfaceService">
+            <intent-filter>
+                <action android:name="com.transround.tools.PING"/>
+                <category android:name="com.transround.tools.TRANSLATOR"/>
+            </intent-filter>
+        </service>
+    </application>
+
 </manifest>
